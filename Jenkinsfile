@@ -1,11 +1,5 @@
-
 pipeline {
     agent any
-
-    triggers {
-        // Run every day at 10:00 PM IST
-        cron('TZ=Asia/Kolkata\n0 22 * * *')
-    }
 
     options {
         timestamps()
