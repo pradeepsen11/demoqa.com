@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauceLabSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SauceLabTest(failed)">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="url" value="https://demoqa.com/automation-practice-form"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="test.robomq.com.testClasses.TestStudentRegistration">
+        <methods>
+          <include name="verifyStudentRegistrationWithValidData"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.robomq.com.testClasses.TestStudentRegistration -->
+    </classes>
+  </test> <!-- SauceLabTest(failed) -->
+</suite> <!-- Failed suite [SauceLabSuite] -->

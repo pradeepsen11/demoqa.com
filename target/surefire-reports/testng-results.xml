@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="56" passed="42" failed="13" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-09T00:07:15 IST" name="TestStudentRegistration" finished-at="2026-10-09T00:09:44 IST" duration-ms="149399">
+    <groups>
+    </groups>
+    <test started-at="2026-10-09T00:07:15 IST" name="TestStudentRegistration" finished-at="2026-10-09T00:09:44 IST" duration-ms="149399">
+      <class name="test.robomq.com.testClasses.TestStudentRegistration">
+        <test-method is-config="true" signature="beforeClass(org.testng.ITestContext,java.lang.String)[pri:0, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:15 IST" name="beforeClass" finished-at="2026-10-09T00:07:20 IST" duration-ms="4830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3feefdcc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demoqa.com/automation-practice-form]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC001_verifyUserCanNavigateToDemoQAHomePage()[pri:1, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:20 IST" name="TC001_verifyUserCanNavigateToDemoQAHomePage" finished-at="2026-10-09T00:07:20 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_verifyUserCanNavigateToDemoQAHomePage -->
+        <test-method signature="TC002_verifyFormsSectionIsVisibleAndInteractable()[pri:2, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:20 IST" name="TC002_verifyFormsSectionIsVisibleAndInteractable" finished-at="2026-10-09T00:07:21 IST" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_verifyFormsSectionIsVisibleAndInteractable -->
+        <test-method signature="TC003_verifyFormsSectionContainsPracticeForm()[pri:3, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:21 IST" name="TC003_verifyFormsSectionContainsPracticeForm" finished-at="2026-10-09T00:07:22 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_verifyFormsSectionContainsPracticeForm -->
+        <test-method signature="TC004_verifyPracticeFormOpensStudentRegistrationForm()[pri:4, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:22 IST" name="TC004_verifyPracticeFormOpensStudentRegistrationForm" finished-at="2026-10-09T00:07:24 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_verifyPracticeFormOpensStudentRegistrationForm -->
+        <test-method signature="TC005_verifyFirstNameAcceptsValidAlphabeticText()[pri:5, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:24 IST" name="TC005_verifyFirstNameAcceptsValidAlphabeticText" finished-at="2026-10-09T00:07:25 IST" duration-ms="1144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_verifyFirstNameAcceptsValidAlphabeticText -->
+        <test-method signature="TC006_verifyLastNameAcceptsValidAlphabeticText()[pri:6, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:25 IST" name="TC006_verifyLastNameAcceptsValidAlphabeticText" finished-at="2026-10-09T00:07:26 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_verifyLastNameAcceptsValidAlphabeticText -->
+        <test-method signature="TC007_verifyFirstNameRejectsInvalidNonTextInput()[pri:7, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:26 IST" name="TC007_verifyFirstNameRejectsInvalidNonTextInput" finished-at="2026-10-09T00:07:27 IST" duration-ms="1118" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid first-name input was accepted. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid first-name input was accepted. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.robomq.com.testClasses.TestStudentRegistration.TC007_verifyFirstNameRejectsInvalidNonTextInput(TestStudentRegistration.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_verifyFirstNameRejectsInvalidNonTextInput -->
+        <test-method signature="TC008_verifyLastNameRejectsInvalidNonTextInput()[pri:8, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:28 IST" name="TC008_verifyLastNameRejectsInvalidNonTextInput" finished-at="2026-10-09T00:07:29 IST" duration-ms="1209" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid last-name input was accepted. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid last-name input was accepted. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.robomq.com.testClasses.TestStudentRegistration.TC008_verifyLastNameRejectsInvalidNonTextInput(TestStudentRegistration.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_verifyLastNameRejectsInvalidNonTextInput -->
+        <test-method signature="TC009_verifyMandatoryValidationForBlankFirstName()[pri:9, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:29 IST" name="TC009_verifyMandatoryValidationForBlankFirstName" finished-at="2026-10-09T00:07:32 IST" duration-ms="3118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_verifyMandatoryValidationForBlankFirstName -->
+        <test-method signature="TC010_verifyMandatoryValidationForBlankLastName()[pri:10, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:32 IST" name="TC010_verifyMandatoryValidationForBlankLastName" finished-at="2026-10-09T00:07:35 IST" duration-ms="2988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_verifyMandatoryValidationForBlankLastName -->
+        <test-method signature="TC011_verifyEmailAcceptsValidFormat()[pri:11, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:36 IST" name="TC011_verifyEmailAcceptsValidFormat" finished-at="2026-10-09T00:07:37 IST" duration-ms="1074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_verifyEmailAcceptsValidFormat -->
+        <test-method signature="TC012_verifyEmailRejectsInvalidFormats()[pri:12, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:37 IST" name="TC012_verifyEmailRejectsInvalidFormats" finished-at="2026-10-09T00:07:38 IST" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_verifyEmailRejectsInvalidFormats -->
+        <test-method signature="TC013_verifyMandatoryValidationForBlankEmail()[pri:13, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:38 IST" name="TC013_verifyMandatoryValidationForBlankEmail" finished-at="2026-10-09T00:07:41 IST" duration-ms="2843" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Blank Email was not identified as invalid. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Blank Email was not identified as invalid. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at test.robomq.com.testClasses.TestStudentRegistration.TC013_verifyMandatoryValidationForBlankEmail(TestStudentRegistration.java:165)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_verifyMandatoryValidationForBlankEmail -->
+        <test-method signature="TC014_verifyOnlyOneGenderCanBeSelected()[pri:14, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:41 IST" name="TC014_verifyOnlyOneGenderCanBeSelected" finished-at="2026-10-09T00:07:43 IST" duration-ms="1378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014_verifyOnlyOneGenderCanBeSelected -->
+        <test-method signature="TC015_verifyGenderIsMandatory()[pri:15, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:43 IST" name="TC015_verifyGenderIsMandatory" finished-at="2026-10-09T00:07:46 IST" duration-ms="2873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_verifyGenderIsMandatory -->
+        <test-method signature="TC016_verifyValidTenDigitMobileNumberIsAccepted()[pri:16, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:46 IST" name="TC016_verifyValidTenDigitMobileNumberIsAccepted" finished-at="2026-10-09T00:07:47 IST" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_verifyValidTenDigitMobileNumberIsAccepted -->
+        <test-method signature="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive()[pri:17, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:47 IST" name="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive" finished-at="2026-10-09T00:07:48 IST" duration-ms="1040" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid starting digit was accepted. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid starting digit was accepted. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at test.robomq.com.testClasses.TestStudentRegistration.TC017_verifyMobileRejectsNumberBeginningWithZeroToFive(TestStudentRegistration.java:206)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC017_verifyMobileRejectsNumberBeginningWithZeroToFive -->
+        <test-method signature="TC018_verifyMobileRejectsFewerThanTenDigits()[pri:18, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:48 IST" name="TC018_verifyMobileRejectsFewerThanTenDigits" finished-at="2026-10-09T00:07:49 IST" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC018_verifyMobileRejectsFewerThanTenDigits -->
+        <test-method signature="TC019_verifyMobileRejectsMoreThanTenDigits()[pri:19, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:49 IST" name="TC019_verifyMobileRejectsMoreThanTenDigits" finished-at="2026-10-09T00:07:50 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC019_verifyMobileRejectsMoreThanTenDigits -->
+        <test-method signature="TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters()[pri:20, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:50 IST" name="TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters" finished-at="2026-10-09T00:07:52 IST" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters -->
+        <test-method signature="TC021_verifyMobileIsMandatory()[pri:21, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:52 IST" name="TC021_verifyMobileIsMandatory" finished-at="2026-10-09T00:07:55 IST" duration-ms="2889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021_verifyMobileIsMandatory -->
+        <test-method signature="TC022_verifyDateOfBirthDatePickerOpens()[pri:22, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:55 IST" name="TC022_verifyDateOfBirthDatePickerOpens" finished-at="2026-10-09T00:07:56 IST" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC022_verifyDateOfBirthDatePickerOpens -->
+        <test-method signature="TC023_verifyCurrentDateIsAutoSelectedByDatePicker()[pri:23, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:56 IST" name="TC023_verifyCurrentDateIsAutoSelectedByDatePicker" finished-at="2026-10-09T00:07:57 IST" duration-ms="978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC023_verifyCurrentDateIsAutoSelectedByDatePicker -->
+        <test-method signature="TC024_verifySelectedDatePopulatesFieldAndPickerCloses()[pri:24, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:07:57 IST" name="TC024_verifySelectedDatePopulatesFieldAndPickerCloses" finished-at="2026-10-09T00:08:08 IST" duration-ms="11346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC024_verifySelectedDatePopulatesFieldAndPickerCloses -->
+        <test-method signature="TC025_verifyDateOfBirthCannotBeLeftInvalid()[pri:25, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:09 IST" name="TC025_verifyDateOfBirthCannotBeLeftInvalid" finished-at="2026-10-09T00:08:09 IST" duration-ms="922" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[DOB field permits invalid manual input. expected [true] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: DOB field permits invalid manual input. expected [true] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at test.robomq.com.testClasses.TestStudentRegistration.TC025_verifyDateOfBirthCannotBeLeftInvalid(TestStudentRegistration.java:274)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC025_verifyDateOfBirthCannotBeLeftInvalid -->
+        <test-method signature="TC026_verifySubjectCanBeSearchedUsingPartialText()[pri:26, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:10 IST" name="TC026_verifySubjectCanBeSearchedUsingPartialText" finished-at="2026-10-09T00:08:11 IST" duration-ms="1099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC026_verifySubjectCanBeSearchedUsingPartialText -->
+        <test-method signature="TC027_verifyUserCanSelectSubjectFromSuggestions()[pri:27, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:11 IST" name="TC027_verifyUserCanSelectSubjectFromSuggestions" finished-at="2026-10-09T00:08:12 IST" duration-ms="1225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC027_verifyUserCanSelectSubjectFromSuggestions -->
+        <test-method signature="TC028_verifyMaximumOfThreeSubjectsCanBeSelected()[pri:28, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:12 IST" name="TC028_verifyMaximumOfThreeSubjectsCanBeSelected" finished-at="2026-10-09T00:08:14 IST" duration-ms="1975" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[More than three subjects were selected. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: More than three subjects were selected. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.robomq.com.testClasses.TestStudentRegistration.TC028_verifyMaximumOfThreeSubjectsCanBeSelected(TestStudentRegistration.java:302)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC028_verifyMaximumOfThreeSubjectsCanBeSelected -->
+        <test-method signature="TC029_verifyInvalidSubjectCannotBeSelected()[pri:29, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:14 IST" name="TC029_verifyInvalidSubjectCannotBeSelected" finished-at="2026-10-09T00:08:25 IST" duration-ms="11163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC029_verifyInvalidSubjectCannotBeSelected -->
+        <test-method signature="TC030_verifyMultipleHobbiesCanBeSelected()[pri:30, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:26 IST" name="TC030_verifyMultipleHobbiesCanBeSelected" finished-at="2026-10-09T00:08:27 IST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC030_verifyMultipleHobbiesCanBeSelected -->
+        <test-method signature="TC031_verifySelectedHobbyCanBeDeselected()[pri:31, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:27 IST" name="TC031_verifySelectedHobbyCanBeDeselected" finished-at="2026-10-09T00:08:28 IST" duration-ms="1006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC031_verifySelectedHobbyCanBeDeselected -->
+        <test-method signature="TC032_verifyValidJpegFileCanBeUploaded()[pri:32, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:28 IST" name="TC032_verifyValidJpegFileCanBeUploaded" finished-at="2026-10-09T00:08:29 IST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC032_verifyValidJpegFileCanBeUploaded -->
+        <test-method signature="TC033_verifyValidPngFileCanBeUploaded()[pri:33, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:29 IST" name="TC033_verifyValidPngFileCanBeUploaded" finished-at="2026-10-09T00:08:30 IST" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC033_verifyValidPngFileCanBeUploaded -->
+        <test-method signature="TC034_verifyUnsupportedFileTypeIsRejected()[pri:34, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:30 IST" name="TC034_verifyUnsupportedFileTypeIsRejected" finished-at="2026-10-09T00:08:31 IST" duration-ms="863" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unsupported PDF file was accepted. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unsupported PDF file was accepted. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at test.robomq.com.testClasses.TestStudentRegistration.TC034_verifyUnsupportedFileTypeIsRejected(TestStudentRegistration.java:358)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC034_verifyUnsupportedFileTypeIsRejected -->
+        <test-method signature="TC035_verifyFileLargerThanTwoMBIsRejected()[pri:35, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:31 IST" name="TC035_verifyFileLargerThanTwoMBIsRejected" finished-at="2026-10-09T00:08:32 IST" duration-ms="864" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[File larger than 2 MB was accepted. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: File larger than 2 MB was accepted. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.robomq.com.testClasses.TestStudentRegistration.TC035_verifyFileLargerThanTwoMBIsRejected(TestStudentRegistration.java:368)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC035_verifyFileLargerThanTwoMBIsRejected -->
+        <test-method signature="TC036_verifyFileExactlyAtTwoMBBoundary()[pri:36, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:32 IST" name="TC036_verifyFileExactlyAtTwoMBBoundary" finished-at="2026-10-09T00:08:33 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC036_verifyFileExactlyAtTwoMBBoundary -->
+        <test-method signature="TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters()[pri:37, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:33 IST" name="TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters" finished-at="2026-10-09T00:08:34 IST" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters -->
+        <test-method signature="TC038_verifyCurrentAddressRejectsInputExceeding100Characters()[pri:38, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:34 IST" name="TC038_verifyCurrentAddressRejectsInputExceeding100Characters" finished-at="2026-10-09T00:08:35 IST" duration-ms="1058" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Address exceeded 100 characters. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Address exceeded 100 characters. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.robomq.com.testClasses.TestStudentRegistration.TC038_verifyCurrentAddressRejectsInputExceeding100Characters(TestStudentRegistration.java:395)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC038_verifyCurrentAddressRejectsInputExceeding100Characters -->
+        <test-method signature="TC039_verifyCurrentAddressAcceptsExactly100Characters()[pri:39, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:35 IST" name="TC039_verifyCurrentAddressAcceptsExactly100Characters" finished-at="2026-10-09T00:08:37 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC039_verifyCurrentAddressAcceptsExactly100Characters -->
+        <test-method signature="TC040_verifyCurrentAddressIsMandatory()[pri:40, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:37 IST" name="TC040_verifyCurrentAddressIsMandatory" finished-at="2026-10-09T00:08:39 IST" duration-ms="2646" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at test.robomq.com.testClasses.TestStudentRegistration.TC040_verifyCurrentAddressIsMandatory(TestStudentRegistration.java:414)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC040_verifyCurrentAddressIsMandatory -->
+        <test-method signature="TC041_verifyStateDropdownOpensAndDisplaysAvailableStates()[pri:41, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:39 IST" name="TC041_verifyStateDropdownOpensAndDisplaysAvailableStates" finished-at="2026-10-09T00:08:41 IST" duration-ms="1099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC041_verifyStateDropdownOpensAndDisplaysAvailableStates -->
+        <test-method signature="TC042_verifyUserCanSelectState()[pri:42, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:41 IST" name="TC042_verifyUserCanSelectState" finished-at="2026-10-09T00:08:42 IST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC042_verifyUserCanSelectState -->
+        <test-method signature="TC043_verifyCityDropdownIsPopulatedAfterStateSelection()[pri:43, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:42 IST" name="TC043_verifyCityDropdownIsPopulatedAfterStateSelection" finished-at="2026-10-09T00:08:43 IST" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC043_verifyCityDropdownIsPopulatedAfterStateSelection -->
+        <test-method signature="TC044_verifyCityOptionsAreRestrictedToSelectedState()[pri:44, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:43 IST" name="TC044_verifyCityOptionsAreRestrictedToSelectedState" finished-at="2026-10-09T00:08:55 IST" duration-ms="11399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC044_verifyCityOptionsAreRestrictedToSelectedState -->
+        <test-method signature="TC045_verifyCityCannotBeSelectedBeforeStateSelection()[pri:45, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:55 IST" name="TC045_verifyCityCannotBeSelectedBeforeStateSelection" finished-at="2026-10-09T00:08:55 IST" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC045_verifyCityCannotBeSelectedBeforeStateSelection -->
+        <test-method signature="TC046_verifyChangingStateRefreshesCityOptions()[pri:46, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:08:56 IST" name="TC046_verifyChangingStateRefreshesCityOptions" finished-at="2026-10-09T00:09:07 IST" duration-ms="11535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC046_verifyChangingStateRefreshesCityOptions -->
+        <test-method signature="TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing()[pri:47, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:07 IST" name="TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing" finished-at="2026-10-09T00:09:18 IST" duration-ms="10971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing -->
+        <test-method signature="TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData()[pri:48, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:18 IST" name="TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData" finished-at="2026-10-09T00:09:21 IST" duration-ms="2793" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at test.robomq.com.testClasses.TestStudentRegistration.TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData(TestStudentRegistration.java:485)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData -->
+        <test-method signature="TC049_verifySubmittedValuesExactlyMatchEnteredValues()[pri:49, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:21 IST" name="TC049_verifySubmittedValuesExactlyMatchEnteredValues" finished-at="2026-10-09T00:09:25 IST" duration-ms="3246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC049_verifySubmittedValuesExactlyMatchEnteredValues -->
+        <test-method signature="TC050_verifySuccessPopupDisplaysExactConfirmationMessage()[pri:50, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:25 IST" name="TC050_verifySuccessPopupDisplaysExactConfirmationMessage" finished-at="2026-10-09T00:09:28 IST" duration-ms="3626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC050_verifySuccessPopupDisplaysExactConfirmationMessage -->
+        <test-method signature="TC051_verifyCloseButtonClosesSuccessPopup()[pri:51, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:29 IST" name="TC051_verifyCloseButtonClosesSuccessPopup" finished-at="2026-10-09T00:09:32 IST" duration-ms="3355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at test.robomq.com.testClasses.TestStudentRegistration.TC051_verifyCloseButtonClosesSuccessPopup(TestStudentRegistration.java:522)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC051_verifyCloseButtonClosesSuccessPopup -->
+        <test-method signature="TC052_verifyCloseButtonRedirectsToHomePage()[pri:52, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:32 IST" name="TC052_verifyCloseButtonRedirectsToHomePage" finished-at="2026-10-09T00:09:35 IST" duration-ms="3148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC052_verifyCloseButtonRedirectsToHomePage -->
+        <test-method signature="TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick()[pri:53, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:35 IST" name="TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick" finished-at="2026-10-09T00:09:38 IST" duration-ms="3021" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at test.robomq.com.testClasses.TestStudentRegistration.TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick(TestStudentRegistration.java:544)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick -->
+        <test-method signature="TC054_verifyEnteredDataIsRetainedWhenValidationFails()[pri:54, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:39 IST" name="TC054_verifyEnteredDataIsRetainedWhenValidationFails" finished-at="2026-10-09T00:09:41 IST" duration-ms="2373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC054_verifyEnteredDataIsRetainedWhenValidationFails -->
+        <test-method signature="TC055_verifyStudentRegistrationWithAllValidData()[pri:55, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:41 IST" name="TC055_verifyStudentRegistrationWithAllValidData" finished-at="2026-10-09T00:09:44 IST" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC055_verifyStudentRegistrationWithAllValidData -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestContext)[pri:0, instance:test.robomq.com.testClasses.TestStudentRegistration@732d0d24]" started-at="2026-10-09T00:09:44 IST" name="afterClass" finished-at="2026-10-09T00:09:44 IST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3feefdcc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.robomq.com.testClasses.TestStudentRegistration -->
+    </test> <!-- TestStudentRegistration -->
+  </suite> <!-- TestStudentRegistration -->
+</testng-results>

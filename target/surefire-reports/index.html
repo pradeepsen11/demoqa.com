@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 13 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestStudentRegistration" class="navigator-link">
+              <span class="suite-name border-failed">TestStudentRegistration</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestStudentRegistration" class="navigator-link ">
+                    <span>D:\My Workspace\TestingWorkspace\test.robomq.com\TestStudentRegistration.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestStudentRegistration" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestStudentRegistration" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestStudentRegistration" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestStudentRegistration" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestStudentRegistration" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestStudentRegistration" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 13 failed,   42 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestStudentRegistration" class="hide-methods failed suite-TestStudentRegistration"> (hide)</a> <!-- hide-methods failed suite-TestStudentRegistration -->
+                      <a href="#" panel-name="suite-TestStudentRegistration" class="show-methods failed suite-TestStudentRegistration"> (show)</a> <!-- show-methods failed suite-TestStudentRegistration -->
+                    </span>
+                    <div class="method-list-content failed suite-TestStudentRegistration">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC007_verifyFirstNameRejectsInvalidNonTextInput">TC007_verifyFirstNameRejectsInvalidNonTextInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC008_verifyLastNameRejectsInvalidNonTextInput">TC008_verifyLastNameRejectsInvalidNonTextInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC013_verifyMandatoryValidationForBlankEmail">TC013_verifyMandatoryValidationForBlankEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive">TC017_verifyMobileRejectsNumberBeginningWithZeroToFive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC025_verifyDateOfBirthCannotBeLeftInvalid">TC025_verifyDateOfBirthCannotBeLeftInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC028_verifyMaximumOfThreeSubjectsCanBeSelected">TC028_verifyMaximumOfThreeSubjectsCanBeSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC034_verifyUnsupportedFileTypeIsRejected">TC034_verifyUnsupportedFileTypeIsRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC035_verifyFileLargerThanTwoMBIsRejected">TC035_verifyFileLargerThanTwoMBIsRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC038_verifyCurrentAddressRejectsInputExceeding100Characters">TC038_verifyCurrentAddressRejectsInputExceeding100Characters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC040_verifyCurrentAddressIsMandatory">TC040_verifyCurrentAddressIsMandatory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData">TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC051_verifyCloseButtonClosesSuccessPopup">TC051_verifyCloseButtonClosesSuccessPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick">TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestStudentRegistration -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestStudentRegistration" class="hide-methods passed suite-TestStudentRegistration"> (hide)</a> <!-- hide-methods passed suite-TestStudentRegistration -->
+                      <a href="#" panel-name="suite-TestStudentRegistration" class="show-methods passed suite-TestStudentRegistration"> (show)</a> <!-- show-methods passed suite-TestStudentRegistration -->
+                    </span>
+                    <div class="method-list-content passed suite-TestStudentRegistration">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC001_verifyUserCanNavigateToDemoQAHomePage">TC001_verifyUserCanNavigateToDemoQAHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC002_verifyFormsSectionIsVisibleAndInteractable">TC002_verifyFormsSectionIsVisibleAndInteractable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC003_verifyFormsSectionContainsPracticeForm">TC003_verifyFormsSectionContainsPracticeForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC004_verifyPracticeFormOpensStudentRegistrationForm">TC004_verifyPracticeFormOpensStudentRegistrationForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC005_verifyFirstNameAcceptsValidAlphabeticText">TC005_verifyFirstNameAcceptsValidAlphabeticText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC006_verifyLastNameAcceptsValidAlphabeticText">TC006_verifyLastNameAcceptsValidAlphabeticText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC009_verifyMandatoryValidationForBlankFirstName">TC009_verifyMandatoryValidationForBlankFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC010_verifyMandatoryValidationForBlankLastName">TC010_verifyMandatoryValidationForBlankLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC011_verifyEmailAcceptsValidFormat">TC011_verifyEmailAcceptsValidFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC012_verifyEmailRejectsInvalidFormats">TC012_verifyEmailRejectsInvalidFormats</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC014_verifyOnlyOneGenderCanBeSelected">TC014_verifyOnlyOneGenderCanBeSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC015_verifyGenderIsMandatory">TC015_verifyGenderIsMandatory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC016_verifyValidTenDigitMobileNumberIsAccepted">TC016_verifyValidTenDigitMobileNumberIsAccepted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC018_verifyMobileRejectsFewerThanTenDigits">TC018_verifyMobileRejectsFewerThanTenDigits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC019_verifyMobileRejectsMoreThanTenDigits">TC019_verifyMobileRejectsMoreThanTenDigits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters">TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC021_verifyMobileIsMandatory">TC021_verifyMobileIsMandatory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC022_verifyDateOfBirthDatePickerOpens">TC022_verifyDateOfBirthDatePickerOpens</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC023_verifyCurrentDateIsAutoSelectedByDatePicker">TC023_verifyCurrentDateIsAutoSelectedByDatePicker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC024_verifySelectedDatePopulatesFieldAndPickerCloses">TC024_verifySelectedDatePopulatesFieldAndPickerCloses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC026_verifySubjectCanBeSearchedUsingPartialText">TC026_verifySubjectCanBeSearchedUsingPartialText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC027_verifyUserCanSelectSubjectFromSuggestions">TC027_verifyUserCanSelectSubjectFromSuggestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC029_verifyInvalidSubjectCannotBeSelected">TC029_verifyInvalidSubjectCannotBeSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC030_verifyMultipleHobbiesCanBeSelected">TC030_verifyMultipleHobbiesCanBeSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC031_verifySelectedHobbyCanBeDeselected">TC031_verifySelectedHobbyCanBeDeselected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC032_verifyValidJpegFileCanBeUploaded">TC032_verifyValidJpegFileCanBeUploaded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC033_verifyValidPngFileCanBeUploaded">TC033_verifyValidPngFileCanBeUploaded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC036_verifyFileExactlyAtTwoMBBoundary">TC036_verifyFileExactlyAtTwoMBBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters">TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC039_verifyCurrentAddressAcceptsExactly100Characters">TC039_verifyCurrentAddressAcceptsExactly100Characters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC041_verifyStateDropdownOpensAndDisplaysAvailableStates">TC041_verifyStateDropdownOpensAndDisplaysAvailableStates</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC042_verifyUserCanSelectState">TC042_verifyUserCanSelectState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC043_verifyCityDropdownIsPopulatedAfterStateSelection">TC043_verifyCityDropdownIsPopulatedAfterStateSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC044_verifyCityOptionsAreRestrictedToSelectedState">TC044_verifyCityOptionsAreRestrictedToSelectedState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC045_verifyCityCannotBeSelectedBeforeStateSelection">TC045_verifyCityCannotBeSelectedBeforeStateSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC046_verifyChangingStateRefreshesCityOptions">TC046_verifyChangingStateRefreshesCityOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing">TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC049_verifySubmittedValuesExactlyMatchEnteredValues">TC049_verifySubmittedValuesExactlyMatchEnteredValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC050_verifySuccessPopupDisplaysExactConfirmationMessage">TC050_verifySuccessPopupDisplaysExactConfirmationMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC052_verifyCloseButtonRedirectsToHomePage">TC052_verifyCloseButtonRedirectsToHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC054_verifyEnteredDataIsRetainedWhenValidationFails">TC054_verifyEnteredDataIsRetainedWhenValidationFails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestStudentRegistration" title="test.robomq.com.testClasses.TestStudentRegistration" class="method navigator-link" hash-for-method="TC055_verifyStudentRegistrationWithAllValidData">TC055_verifyStudentRegistrationWithAllValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestStudentRegistration -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestStudentRegistration" class="panel TestStudentRegistration">
+          <div class="suite-TestStudentRegistration-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.robomq.com.testClasses.TestStudentRegistration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC007_verifyFirstNameRejectsInvalidNonTextInput">
+                  </a> <!-- TC007_verifyFirstNameRejectsInvalidNonTextInput -->
+                  <span class="method-name">TC007_verifyFirstNameRejectsInvalidNonTextInput</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid first-name input was accepted. expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC007_verifyFirstNameRejectsInvalidNonTextInput(TestStudentRegistration.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC008_verifyLastNameRejectsInvalidNonTextInput">
+                  </a> <!-- TC008_verifyLastNameRejectsInvalidNonTextInput -->
+                  <span class="method-name">TC008_verifyLastNameRejectsInvalidNonTextInput</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid last-name input was accepted. expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC008_verifyLastNameRejectsInvalidNonTextInput(TestStudentRegistration.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC013_verifyMandatoryValidationForBlankEmail">
+                  </a> <!-- TC013_verifyMandatoryValidationForBlankEmail -->
+                  <span class="method-name">TC013_verifyMandatoryValidationForBlankEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: Blank Email was not identified as invalid. expected [false] but found [true]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC013_verifyMandatoryValidationForBlankEmail(TestStudentRegistration.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive">
+                  </a> <!-- TC017_verifyMobileRejectsNumberBeginningWithZeroToFive -->
+                  <span class="method-name">TC017_verifyMobileRejectsNumberBeginningWithZeroToFive</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid starting digit was accepted. expected [false] but found [true]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC017_verifyMobileRejectsNumberBeginningWithZeroToFive(TestStudentRegistration.java:206)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC025_verifyDateOfBirthCannotBeLeftInvalid">
+                  </a> <!-- TC025_verifyDateOfBirthCannotBeLeftInvalid -->
+                  <span class="method-name">TC025_verifyDateOfBirthCannotBeLeftInvalid</span>
+                  <div class="stack-trace">java.lang.AssertionError: DOB field permits invalid manual input. expected [true] but found [null]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC025_verifyDateOfBirthCannotBeLeftInvalid(TestStudentRegistration.java:274)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC028_verifyMaximumOfThreeSubjectsCanBeSelected">
+                  </a> <!-- TC028_verifyMaximumOfThreeSubjectsCanBeSelected -->
+                  <span class="method-name">TC028_verifyMaximumOfThreeSubjectsCanBeSelected</span>
+                  <div class="stack-trace">java.lang.AssertionError: More than three subjects were selected. expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC028_verifyMaximumOfThreeSubjectsCanBeSelected(TestStudentRegistration.java:302)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC034_verifyUnsupportedFileTypeIsRejected">
+                  </a> <!-- TC034_verifyUnsupportedFileTypeIsRejected -->
+                  <span class="method-name">TC034_verifyUnsupportedFileTypeIsRejected</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unsupported PDF file was accepted. expected [false] but found [true]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC034_verifyUnsupportedFileTypeIsRejected(TestStudentRegistration.java:358)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC035_verifyFileLargerThanTwoMBIsRejected">
+                  </a> <!-- TC035_verifyFileLargerThanTwoMBIsRejected -->
+                  <span class="method-name">TC035_verifyFileLargerThanTwoMBIsRejected</span>
+                  <div class="stack-trace">java.lang.AssertionError: File larger than 2 MB was accepted. expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC035_verifyFileLargerThanTwoMBIsRejected(TestStudentRegistration.java:368)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC038_verifyCurrentAddressRejectsInputExceeding100Characters">
+                  </a> <!-- TC038_verifyCurrentAddressRejectsInputExceeding100Characters -->
+                  <span class="method-name">TC038_verifyCurrentAddressRejectsInputExceeding100Characters</span>
+                  <div class="stack-trace">java.lang.AssertionError: Address exceeded 100 characters. expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC038_verifyCurrentAddressRejectsInputExceeding100Characters(TestStudentRegistration.java:395)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC040_verifyCurrentAddressIsMandatory">
+                  </a> <!-- TC040_verifyCurrentAddressIsMandatory -->
+                  <span class="method-name">TC040_verifyCurrentAddressIsMandatory</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC040_verifyCurrentAddressIsMandatory(TestStudentRegistration.java:414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData">
+                  </a> <!-- TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData -->
+                  <span class="method-name">TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData(TestStudentRegistration.java:485)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC051_verifyCloseButtonClosesSuccessPopup">
+                  </a> <!-- TC051_verifyCloseButtonClosesSuccessPopup -->
+                  <span class="method-name">TC051_verifyCloseButtonClosesSuccessPopup</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC051_verifyCloseButtonClosesSuccessPopup(TestStudentRegistration.java:522)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick">
+                  </a> <!-- TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick -->
+                  <span class="method-name">TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.robomq.com.testClasses.TestStudentRegistration.TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick(TestStudentRegistration.java:544)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestStudentRegistration-class-failed -->
+          <div class="suite-TestStudentRegistration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.robomq.com.testClasses.TestStudentRegistration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_verifyUserCanNavigateToDemoQAHomePage">
+                  </a> <!-- TC001_verifyUserCanNavigateToDemoQAHomePage -->
+                  <span class="method-name">TC001_verifyUserCanNavigateToDemoQAHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_verifyFormsSectionIsVisibleAndInteractable">
+                  </a> <!-- TC002_verifyFormsSectionIsVisibleAndInteractable -->
+                  <span class="method-name">TC002_verifyFormsSectionIsVisibleAndInteractable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_verifyFormsSectionContainsPracticeForm">
+                  </a> <!-- TC003_verifyFormsSectionContainsPracticeForm -->
+                  <span class="method-name">TC003_verifyFormsSectionContainsPracticeForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC004_verifyPracticeFormOpensStudentRegistrationForm">
+                  </a> <!-- TC004_verifyPracticeFormOpensStudentRegistrationForm -->
+                  <span class="method-name">TC004_verifyPracticeFormOpensStudentRegistrationForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC005_verifyFirstNameAcceptsValidAlphabeticText">
+                  </a> <!-- TC005_verifyFirstNameAcceptsValidAlphabeticText -->
+                  <span class="method-name">TC005_verifyFirstNameAcceptsValidAlphabeticText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC006_verifyLastNameAcceptsValidAlphabeticText">
+                  </a> <!-- TC006_verifyLastNameAcceptsValidAlphabeticText -->
+                  <span class="method-name">TC006_verifyLastNameAcceptsValidAlphabeticText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC009_verifyMandatoryValidationForBlankFirstName">
+                  </a> <!-- TC009_verifyMandatoryValidationForBlankFirstName -->
+                  <span class="method-name">TC009_verifyMandatoryValidationForBlankFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC010_verifyMandatoryValidationForBlankLastName">
+                  </a> <!-- TC010_verifyMandatoryValidationForBlankLastName -->
+                  <span class="method-name">TC010_verifyMandatoryValidationForBlankLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_verifyEmailAcceptsValidFormat">
+                  </a> <!-- TC011_verifyEmailAcceptsValidFormat -->
+                  <span class="method-name">TC011_verifyEmailAcceptsValidFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC012_verifyEmailRejectsInvalidFormats">
+                  </a> <!-- TC012_verifyEmailRejectsInvalidFormats -->
+                  <span class="method-name">TC012_verifyEmailRejectsInvalidFormats</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC014_verifyOnlyOneGenderCanBeSelected">
+                  </a> <!-- TC014_verifyOnlyOneGenderCanBeSelected -->
+                  <span class="method-name">TC014_verifyOnlyOneGenderCanBeSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC015_verifyGenderIsMandatory">
+                  </a> <!-- TC015_verifyGenderIsMandatory -->
+                  <span class="method-name">TC015_verifyGenderIsMandatory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC016_verifyValidTenDigitMobileNumberIsAccepted">
+                  </a> <!-- TC016_verifyValidTenDigitMobileNumberIsAccepted -->
+                  <span class="method-name">TC016_verifyValidTenDigitMobileNumberIsAccepted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC018_verifyMobileRejectsFewerThanTenDigits">
+                  </a> <!-- TC018_verifyMobileRejectsFewerThanTenDigits -->
+                  <span class="method-name">TC018_verifyMobileRejectsFewerThanTenDigits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC019_verifyMobileRejectsMoreThanTenDigits">
+                  </a> <!-- TC019_verifyMobileRejectsMoreThanTenDigits -->
+                  <span class="method-name">TC019_verifyMobileRejectsMoreThanTenDigits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters">
+                  </a> <!-- TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters -->
+                  <span class="method-name">TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC021_verifyMobileIsMandatory">
+                  </a> <!-- TC021_verifyMobileIsMandatory -->
+                  <span class="method-name">TC021_verifyMobileIsMandatory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC022_verifyDateOfBirthDatePickerOpens">
+                  </a> <!-- TC022_verifyDateOfBirthDatePickerOpens -->
+                  <span class="method-name">TC022_verifyDateOfBirthDatePickerOpens</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC023_verifyCurrentDateIsAutoSelectedByDatePicker">
+                  </a> <!-- TC023_verifyCurrentDateIsAutoSelectedByDatePicker -->
+                  <span class="method-name">TC023_verifyCurrentDateIsAutoSelectedByDatePicker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC024_verifySelectedDatePopulatesFieldAndPickerCloses">
+                  </a> <!-- TC024_verifySelectedDatePopulatesFieldAndPickerCloses -->
+                  <span class="method-name">TC024_verifySelectedDatePopulatesFieldAndPickerCloses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC026_verifySubjectCanBeSearchedUsingPartialText">
+                  </a> <!-- TC026_verifySubjectCanBeSearchedUsingPartialText -->
+                  <span class="method-name">TC026_verifySubjectCanBeSearchedUsingPartialText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC027_verifyUserCanSelectSubjectFromSuggestions">
+                  </a> <!-- TC027_verifyUserCanSelectSubjectFromSuggestions -->
+                  <span class="method-name">TC027_verifyUserCanSelectSubjectFromSuggestions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC029_verifyInvalidSubjectCannotBeSelected">
+                  </a> <!-- TC029_verifyInvalidSubjectCannotBeSelected -->
+                  <span class="method-name">TC029_verifyInvalidSubjectCannotBeSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC030_verifyMultipleHobbiesCanBeSelected">
+                  </a> <!-- TC030_verifyMultipleHobbiesCanBeSelected -->
+                  <span class="method-name">TC030_verifyMultipleHobbiesCanBeSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC031_verifySelectedHobbyCanBeDeselected">
+                  </a> <!-- TC031_verifySelectedHobbyCanBeDeselected -->
+                  <span class="method-name">TC031_verifySelectedHobbyCanBeDeselected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC032_verifyValidJpegFileCanBeUploaded">
+                  </a> <!-- TC032_verifyValidJpegFileCanBeUploaded -->
+                  <span class="method-name">TC032_verifyValidJpegFileCanBeUploaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC033_verifyValidPngFileCanBeUploaded">
+                  </a> <!-- TC033_verifyValidPngFileCanBeUploaded -->
+                  <span class="method-name">TC033_verifyValidPngFileCanBeUploaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC036_verifyFileExactlyAtTwoMBBoundary">
+                  </a> <!-- TC036_verifyFileExactlyAtTwoMBBoundary -->
+                  <span class="method-name">TC036_verifyFileExactlyAtTwoMBBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters">
+                  </a> <!-- TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters -->
+                  <span class="method-name">TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC039_verifyCurrentAddressAcceptsExactly100Characters">
+                  </a> <!-- TC039_verifyCurrentAddressAcceptsExactly100Characters -->
+                  <span class="method-name">TC039_verifyCurrentAddressAcceptsExactly100Characters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC041_verifyStateDropdownOpensAndDisplaysAvailableStates">
+                  </a> <!-- TC041_verifyStateDropdownOpensAndDisplaysAvailableStates -->
+                  <span class="method-name">TC041_verifyStateDropdownOpensAndDisplaysAvailableStates</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC042_verifyUserCanSelectState">
+                  </a> <!-- TC042_verifyUserCanSelectState -->
+                  <span class="method-name">TC042_verifyUserCanSelectState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC043_verifyCityDropdownIsPopulatedAfterStateSelection">
+                  </a> <!-- TC043_verifyCityDropdownIsPopulatedAfterStateSelection -->
+                  <span class="method-name">TC043_verifyCityDropdownIsPopulatedAfterStateSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC044_verifyCityOptionsAreRestrictedToSelectedState">
+                  </a> <!-- TC044_verifyCityOptionsAreRestrictedToSelectedState -->
+                  <span class="method-name">TC044_verifyCityOptionsAreRestrictedToSelectedState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC045_verifyCityCannotBeSelectedBeforeStateSelection">
+                  </a> <!-- TC045_verifyCityCannotBeSelectedBeforeStateSelection -->
+                  <span class="method-name">TC045_verifyCityCannotBeSelectedBeforeStateSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC046_verifyChangingStateRefreshesCityOptions">
+                  </a> <!-- TC046_verifyChangingStateRefreshesCityOptions -->
+                  <span class="method-name">TC046_verifyChangingStateRefreshesCityOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing">
+                  </a> <!-- TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing -->
+                  <span class="method-name">TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC049_verifySubmittedValuesExactlyMatchEnteredValues">
+                  </a> <!-- TC049_verifySubmittedValuesExactlyMatchEnteredValues -->
+                  <span class="method-name">TC049_verifySubmittedValuesExactlyMatchEnteredValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC050_verifySuccessPopupDisplaysExactConfirmationMessage">
+                  </a> <!-- TC050_verifySuccessPopupDisplaysExactConfirmationMessage -->
+                  <span class="method-name">TC050_verifySuccessPopupDisplaysExactConfirmationMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC052_verifyCloseButtonRedirectsToHomePage">
+                  </a> <!-- TC052_verifyCloseButtonRedirectsToHomePage -->
+                  <span class="method-name">TC052_verifyCloseButtonRedirectsToHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC054_verifyEnteredDataIsRetainedWhenValidationFails">
+                  </a> <!-- TC054_verifyEnteredDataIsRetainedWhenValidationFails -->
+                  <span class="method-name">TC054_verifyEnteredDataIsRetainedWhenValidationFails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC055_verifyStudentRegistrationWithAllValidData">
+                  </a> <!-- TC055_verifyStudentRegistrationWithAllValidData -->
+                  <span class="method-name">TC055_verifyStudentRegistrationWithAllValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestStudentRegistration-class-passed -->
+        </div> <!-- panel TestStudentRegistration -->
+        <div panel-name="test-xml-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\My Workspace\TestingWorkspace\test.robomq.com\TestStudentRegistration.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestStudentRegistration&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.robomq.com.utility.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestStudentRegistration&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demoqa.com/automation-practice-form&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.robomq.com.testClasses.TestStudentRegistration&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestStudentRegistration --&gt;
+&lt;/suite&gt; &lt;!-- TestStudentRegistration --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestStudentRegistration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestStudentRegistration (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestStudentRegistration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestStudentRegistration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestStudentRegistration');
+function tableData_TestStudentRegistration() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC046_verifyChangingStateRefreshesCityOptions')
+data.setCell(0, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(0, 3, 11535);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC044_verifyCityOptionsAreRestrictedToSelectedState')
+data.setCell(1, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(1, 3, 11399);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC024_verifySelectedDatePopulatesFieldAndPickerCloses')
+data.setCell(2, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(2, 3, 11346);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC029_verifyInvalidSubjectCannotBeSelected')
+data.setCell(3, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(3, 3, 11163);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing')
+data.setCell(4, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(4, 3, 10971);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC050_verifySuccessPopupDisplaysExactConfirmationMessage')
+data.setCell(5, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(5, 3, 3626);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC051_verifyCloseButtonClosesSuccessPopup')
+data.setCell(6, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(6, 3, 3355);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC049_verifySubmittedValuesExactlyMatchEnteredValues')
+data.setCell(7, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(7, 3, 3246);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC052_verifyCloseButtonRedirectsToHomePage')
+data.setCell(8, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(8, 3, 3148);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC009_verifyMandatoryValidationForBlankFirstName')
+data.setCell(9, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(9, 3, 3118);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick')
+data.setCell(10, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(10, 3, 3021);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC010_verifyMandatoryValidationForBlankLastName')
+data.setCell(11, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(11, 3, 2988);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC021_verifyMobileIsMandatory')
+data.setCell(12, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(12, 3, 2889);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC015_verifyGenderIsMandatory')
+data.setCell(13, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(13, 3, 2873);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC013_verifyMandatoryValidationForBlankEmail')
+data.setCell(14, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(14, 3, 2843);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData')
+data.setCell(15, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(15, 3, 2793);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC040_verifyCurrentAddressIsMandatory')
+data.setCell(16, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(16, 3, 2646);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC055_verifyStudentRegistrationWithAllValidData')
+data.setCell(17, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(17, 3, 2522);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC054_verifyEnteredDataIsRetainedWhenValidationFails')
+data.setCell(18, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(18, 3, 2373);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC028_verifyMaximumOfThreeSubjectsCanBeSelected')
+data.setCell(19, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(19, 3, 1975);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC012_verifyEmailRejectsInvalidFormats')
+data.setCell(20, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(20, 3, 1558);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC014_verifyOnlyOneGenderCanBeSelected')
+data.setCell(21, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(21, 3, 1378);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC027_verifyUserCanSelectSubjectFromSuggestions')
+data.setCell(22, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(22, 3, 1225);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC008_verifyLastNameRejectsInvalidNonTextInput')
+data.setCell(23, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(23, 3, 1209);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC004_verifyPracticeFormOpensStudentRegistrationForm')
+data.setCell(24, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(24, 3, 1196);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC030_verifyMultipleHobbiesCanBeSelected')
+data.setCell(25, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(25, 3, 1183);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TC043_verifyCityDropdownIsPopulatedAfterStateSelection')
+data.setCell(26, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(26, 3, 1155);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC005_verifyFirstNameAcceptsValidAlphabeticText')
+data.setCell(27, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(27, 3, 1144);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters')
+data.setCell(28, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(28, 3, 1136);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TC006_verifyLastNameAcceptsValidAlphabeticText')
+data.setCell(29, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(29, 3, 1135);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TC007_verifyFirstNameRejectsInvalidNonTextInput')
+data.setCell(30, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(30, 3, 1118);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TC026_verifySubjectCanBeSearchedUsingPartialText')
+data.setCell(31, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(31, 3, 1099);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'TC041_verifyStateDropdownOpensAndDisplaysAvailableStates')
+data.setCell(32, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(32, 3, 1099);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'TC039_verifyCurrentAddressAcceptsExactly100Characters')
+data.setCell(33, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(33, 3, 1097);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TC011_verifyEmailAcceptsValidFormat')
+data.setCell(34, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(34, 3, 1074);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'TC038_verifyCurrentAddressRejectsInputExceeding100Characters')
+data.setCell(35, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(35, 3, 1058);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'TC017_verifyMobileRejectsNumberBeginningWithZeroToFive')
+data.setCell(36, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(36, 3, 1040);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'TC016_verifyValidTenDigitMobileNumberIsAccepted')
+data.setCell(37, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(37, 3, 1039);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'TC042_verifyUserCanSelectState')
+data.setCell(38, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(38, 3, 1030);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'TC031_verifySelectedHobbyCanBeDeselected')
+data.setCell(39, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(39, 3, 1006);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'TC023_verifyCurrentDateIsAutoSelectedByDatePicker')
+data.setCell(40, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(40, 3, 978);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'TC022_verifyDateOfBirthDatePickerOpens')
+data.setCell(41, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(41, 3, 973);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'TC036_verifyFileExactlyAtTwoMBBoundary')
+data.setCell(42, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(42, 3, 968);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters')
+data.setCell(43, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(43, 3, 962);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'TC018_verifyMobileRejectsFewerThanTenDigits')
+data.setCell(44, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(44, 3, 931);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'TC019_verifyMobileRejectsMoreThanTenDigits')
+data.setCell(45, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(45, 3, 926);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'TC025_verifyDateOfBirthCannotBeLeftInvalid')
+data.setCell(46, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(46, 3, 922);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'TC035_verifyFileLargerThanTwoMBIsRejected')
+data.setCell(47, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(47, 3, 864);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'TC034_verifyUnsupportedFileTypeIsRejected')
+data.setCell(48, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(48, 3, 863);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'TC033_verifyValidPngFileCanBeUploaded')
+data.setCell(49, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(49, 3, 857);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'TC032_verifyValidJpegFileCanBeUploaded')
+data.setCell(50, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(50, 3, 853);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'TC045_verifyCityCannotBeSelectedBeforeStateSelection')
+data.setCell(51, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(51, 3, 789);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'TC003_verifyFormsSectionContainsPracticeForm')
+data.setCell(52, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(52, 3, 735);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'TC002_verifyFormsSectionIsVisibleAndInteractable')
+data.setCell(53, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(53, 3, 584);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'TC001_verifyUserCanNavigateToDemoQAHomePage')
+data.setCell(54, 2, 'test.robomq.com.testClasses.TestStudentRegistration')
+data.setCell(54, 3, 468);
+window.suiteTableData['TestStudentRegistration']= { tableData: data, tableDiv: 'times-div-TestStudentRegistration'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-TestStudentRegistration">
+              </div> <!-- times-div-TestStudentRegistration -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestStudentRegistration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.robomq.com.testClasses.TestStudentRegistration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">environmentSetupStatus</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestStudentRegistration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.robomq.com.testClasses.TestStudentRegistration</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeClass(org.testng.TestRunner@3feefdcc, https://demoqa.com/automation-practice-form)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TC001_verifyUserCanNavigateToDemoQAHomePage</span>
+                <span class="method-start">4860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC002_verifyFormsSectionIsVisibleAndInteractable</span>
+                <span class="method-start">5588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC003_verifyFormsSectionContainsPracticeForm</span>
+                <span class="method-start">6532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC004_verifyPracticeFormOpensStudentRegistrationForm</span>
+                <span class="method-start">7533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC005_verifyFirstNameAcceptsValidAlphabeticText</span>
+                <span class="method-start">8862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC006_verifyLastNameAcceptsValidAlphabeticText</span>
+                <span class="method-start">10142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC007_verifyFirstNameRejectsInvalidNonTextInput</span>
+                <span class="method-start">11433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC008_verifyLastNameRejectsInvalidNonTextInput</span>
+                <span class="method-start">12719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC009_verifyMandatoryValidationForBlankFirstName</span>
+                <span class="method-start">14138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC010_verifyMandatoryValidationForBlankLastName</span>
+                <span class="method-start">17465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC011_verifyEmailAcceptsValidFormat</span>
+                <span class="method-start">20719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC012_verifyEmailRejectsInvalidFormats</span>
+                <span class="method-start">21936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC013_verifyMandatoryValidationForBlankEmail</span>
+                <span class="method-start">23603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC014_verifyOnlyOneGenderCanBeSelected</span>
+                <span class="method-start">26636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC015_verifyGenderIsMandatory</span>
+                <span class="method-start">28154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC016_verifyValidTenDigitMobileNumberIsAccepted</span>
+                <span class="method-start">31173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC017_verifyMobileRejectsNumberBeginningWithZeroToFive</span>
+                <span class="method-start">32345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC018_verifyMobileRejectsFewerThanTenDigits</span>
+                <span class="method-start">33532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC019_verifyMobileRejectsMoreThanTenDigits</span>
+                <span class="method-start">34612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters</span>
+                <span class="method-start">35699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC021_verifyMobileIsMandatory</span>
+                <span class="method-start">37008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC022_verifyDateOfBirthDatePickerOpens</span>
+                <span class="method-start">40047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC023_verifyCurrentDateIsAutoSelectedByDatePicker</span>
+                <span class="method-start">41184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC024_verifySelectedDatePopulatesFieldAndPickerCloses</span>
+                <span class="method-start">42325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC025_verifyDateOfBirthCannotBeLeftInvalid</span>
+                <span class="method-start">53771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC026_verifySubjectCanBeSearchedUsingPartialText</span>
+                <span class="method-start">54840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC027_verifyUserCanSelectSubjectFromSuggestions</span>
+                <span class="method-start">56056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC028_verifyMaximumOfThreeSubjectsCanBeSelected</span>
+                <span class="method-start">57396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC029_verifyInvalidSubjectCannotBeSelected</span>
+                <span class="method-start">59486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC030_verifyMultipleHobbiesCanBeSelected</span>
+                <span class="method-start">70783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC031_verifySelectedHobbyCanBeDeselected</span>
+                <span class="method-start">72111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC032_verifyValidJpegFileCanBeUploaded</span>
+                <span class="method-start">73243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC033_verifyValidPngFileCanBeUploaded</span>
+                <span class="method-start">74238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC034_verifyUnsupportedFileTypeIsRejected</span>
+                <span class="method-start">75228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC035_verifyFileLargerThanTwoMBIsRejected</span>
+                <span class="method-start">76215 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC036_verifyFileExactlyAtTwoMBBoundary</span>
+                <span class="method-start">77212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters</span>
+                <span class="method-start">78297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC038_verifyCurrentAddressRejectsInputExceeding100Characters</span>
+                <span class="method-start">79425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC039_verifyCurrentAddressAcceptsExactly100Characters</span>
+                <span class="method-start">80613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC040_verifyCurrentAddressIsMandatory</span>
+                <span class="method-start">81871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC041_verifyStateDropdownOpensAndDisplaysAvailableStates</span>
+                <span class="method-start">84685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC042_verifyUserCanSelectState</span>
+                <span class="method-start">85921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC043_verifyCityDropdownIsPopulatedAfterStateSelection</span>
+                <span class="method-start">87089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC044_verifyCityOptionsAreRestrictedToSelectedState</span>
+                <span class="method-start">88384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC045_verifyCityCannotBeSelectedBeforeStateSelection</span>
+                <span class="method-start">99909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC046_verifyChangingStateRefreshesCityOptions</span>
+                <span class="method-start">100899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing</span>
+                <span class="method-start">112540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData</span>
+                <span class="method-start">123653 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC049_verifySubmittedValuesExactlyMatchEnteredValues</span>
+                <span class="method-start">126638 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC050_verifySuccessPopupDisplaysExactConfirmationMessage</span>
+                <span class="method-start">130028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC051_verifyCloseButtonClosesSuccessPopup</span>
+                <span class="method-start">133806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC052_verifyCloseButtonRedirectsToHomePage</span>
+                <span class="method-start">137286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick</span>
+                <span class="method-start">140582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC054_verifyEnteredDataIsRetainedWhenValidationFails</span>
+                <span class="method-start">143774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC055_verifyStudentRegistrationWithAllValidData</span>
+                <span class="method-start">146340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterClass(org.testng.TestRunner@3feefdcc)</span>
+                <span class="method-start">149003 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

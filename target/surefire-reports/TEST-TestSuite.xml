@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="151.315" tests="55" errors="0" skipped="0" failures="13">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\CSA\.cache\selenium\chromedriver\win64\154.0.8037.92\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\My Workspace\TestingWorkspace\test.robomq.com\target\test-classes;D:\My Workspace\TestingWorkspace\test.robomq.com\target\classes;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-java\4.47.0\selenium-java-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-api\4.47.0\selenium-api-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.47.0\selenium-chrome-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.47.0\selenium-chromium-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.47.0\selenium-devtools-v149-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.47.0\selenium-devtools-v150-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.47.0\selenium-devtools-v151-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.47.0\selenium-edge-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.47.0\selenium-firefox-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-http\4.47.0\selenium-http-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.47.0\selenium-ie-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.47.0\selenium-remote-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\CSA\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\CSA\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\CSA\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\CSA\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.47.0\selenium-safari-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-support\4.47.0\selenium-support-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.47.0\selenium-devtools-latest-4.47.0.jar;C:\Users\CSA\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-json\4.47.0\selenium-json-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.47.0\selenium-manager-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-os\4.47.0\selenium-os-4.47.0.jar;C:\Users\CSA\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\CSA\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\CSA\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\CSA\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\CSA\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\CSA\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\CSA\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\CSA\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\CSA\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\CSA\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\CSA\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\CSA\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\CSA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\CSA\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\CSA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\CSA\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\CSA\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\CSA\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\CSA\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\CSA\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\CSA\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.26.1\log4j-slf4j2-impl-2.26.1.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\rest-assured\6.0.1\rest-assured-6.0.1.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\CSA\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\CSA\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\CSA\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\json-path\6.0.1\json-path-6.0.1.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\CSA\.m2\repository\io\rest-assured\rest-assured-common\6.0.1\rest-assured-common-6.0.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\xml-path\6.0.1\xml-path-6.0.1.jar;C:\Users\CSA\.m2\repository\org\postgresql\postgresql\42.7.10\postgresql-42.7.10.jar;C:\Users\CSA\.m2\repository\org\checkerframework\checker-qual\3.52.0\checker-qual-3.52.0.jar;C:\Users\CSA\.m2\repository\org\yaml\snakeyaml\2.6\snakeyaml-2.6.jar;C:\Users\CSA\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\CSA\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\CSA\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.10\kotlin-stdlib-common-1.9.10.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\CSA\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\CSA\.m2\repository\org\json\json\20260814\json-20260814.jar;C:\Users\CSA\.m2\repository\org\jsoup\jsoup\1.23.1\jsoup-1.23.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="suiteXmlFile" value="TestStudentRegistration.xml"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\CSA\AppData\Local\Temp\surefire11322750985868490330\surefirebooter-20261009000713606_3.jar C:\Users\CSA\AppData\Local\Temp\surefire11322750985868490330 2026-10-09T00-07-13_402-jvmRun1 surefire-20261009000713606_1tmp surefire_0-20261009000713606_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\My Workspace\TestingWorkspace\test.robomq.com\target\test-classes;D:\My Workspace\TestingWorkspace\test.robomq.com\target\classes;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-java\4.47.0\selenium-java-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-api\4.47.0\selenium-api-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.47.0\selenium-chrome-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.47.0\selenium-chromium-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.47.0\selenium-devtools-v149-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.47.0\selenium-devtools-v150-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.47.0\selenium-devtools-v151-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.47.0\selenium-edge-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.47.0\selenium-firefox-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-http\4.47.0\selenium-http-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.47.0\selenium-ie-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.47.0\selenium-remote-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\CSA\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\CSA\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\CSA\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\CSA\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\CSA\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.47.0\selenium-safari-driver-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-support\4.47.0\selenium-support-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.47.0\selenium-devtools-latest-4.47.0.jar;C:\Users\CSA\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-json\4.47.0\selenium-json-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.47.0\selenium-manager-4.47.0.jar;C:\Users\CSA\.m2\repository\org\seleniumhq\selenium\selenium-os\4.47.0\selenium-os-4.47.0.jar;C:\Users\CSA\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\CSA\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\CSA\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\CSA\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\CSA\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\CSA\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\CSA\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\CSA\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\CSA\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\CSA\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\CSA\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\CSA\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\CSA\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\CSA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\CSA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\CSA\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\CSA\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\CSA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\CSA\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\CSA\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\CSA\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\CSA\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\CSA\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\CSA\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\CSA\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.26.1\log4j-slf4j2-impl-2.26.1.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\CSA\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\rest-assured\6.0.1\rest-assured-6.0.1.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\CSA\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\CSA\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\CSA\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\CSA\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\json-path\6.0.1\json-path-6.0.1.jar;C:\Users\CSA\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\CSA\.m2\repository\io\rest-assured\rest-assured-common\6.0.1\rest-assured-common-6.0.1.jar;C:\Users\CSA\.m2\repository\io\rest-assured\xml-path\6.0.1\xml-path-6.0.1.jar;C:\Users\CSA\.m2\repository\org\postgresql\postgresql\42.7.10\postgresql-42.7.10.jar;C:\Users\CSA\.m2\repository\org\checkerframework\checker-qual\3.52.0\checker-qual-3.52.0.jar;C:\Users\CSA\.m2\repository\org\yaml\snakeyaml\2.6\snakeyaml-2.6.jar;C:\Users\CSA\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\CSA\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\CSA\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.10\kotlin-stdlib-common-1.9.10.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\CSA\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\CSA\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\CSA\.m2\repository\org\json\json\20260814\json-20260814.jar;C:\Users\CSA\.m2\repository\org\jsoup\jsoup\1.23.1\jsoup-1.23.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\CSA"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\My Workspace\TestingWorkspace\test.robomq.com"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\CSA\AppData\Local\Temp\surefire11322750985868490330\surefirebooter-20261009000713606_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="CSA"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\CSA\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\CSA\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="D:\My Workspace\TestingWorkspace\test.robomq.com"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\CSA\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\CSA\bin;C:\Program Files\Java\jdk-17.0.11\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\ProDot Antivirus;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Maven\apache-maven-3.9.6\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\CSA\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;D:\My Workspace\Microsoft VS Code\bin;C:\Users\CSA\AppData\Local\GitHubDesktop\bin;C:\Node\node_modules\npm\bin;C:\Users\CSA\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="TC001_verifyUserCanNavigateToDemoQAHomePage" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.725">
+    <system-out><![CDATA[Starting Test Suite: TestStudentRegistration
+Starting Test: TC001_verifyUserCanNavigateToDemoQAHomePage in suite: TestStudentRegistration
+[INFO] [00:07:20.612] Navigate to DemoQA home page
+[INFO] [00:07:20.634] https://demoqa.com/
+[INFO] [00:07:20.635] Test Passed
+Test Passed: TC001_verifyUserCanNavigateToDemoQAHomePage
+]]></system-out>
+    <system-err><![CDATA[Oct 09, 2026 12:07:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 151; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="TC002_verifyFormsSectionIsVisibleAndInteractable" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.943">
+    <system-out><![CDATA[Starting Test: TC002_verifyFormsSectionIsVisibleAndInteractable in suite: TestStudentRegistration
+[INFO] [00:07:21.264] Navigate to DemoQA home page
+[INFO] [00:07:21.471] Click Forms section
+[INFO] [00:07:21.493] https://demoqa.com/forms
+[INFO] [00:07:21.493] Test Passed
+Test Passed: TC002_verifyFormsSectionIsVisibleAndInteractable
+]]></system-out>
+  </testcase>
+  <testcase name="TC003_verifyFormsSectionContainsPracticeForm" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.999">
+    <system-out><![CDATA[Starting Test: TC003_verifyFormsSectionContainsPracticeForm in suite: TestStudentRegistration
+[INFO] [00:07:22.268] Navigate to DemoQA home page
+[INFO] [00:07:22.412] Click Forms section
+[INFO] [00:07:22.589] https://demoqa.com/forms
+[INFO] [00:07:22.590] Test Passed
+Test Passed: TC003_verifyFormsSectionContainsPracticeForm
+]]></system-out>
+  </testcase>
+  <testcase name="TC004_verifyPracticeFormOpensStudentRegistrationForm" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.328">
+    <system-out><![CDATA[Starting Test: TC004_verifyPracticeFormOpensStudentRegistrationForm in suite: TestStudentRegistration
+[INFO] [00:07:23.213] Navigate to DemoQA home page
+[INFO] [00:07:23.335] Click Forms section
+[INFO] [00:07:23.794] Click Practice Form
+[INFO] [00:07:24.036] https://demoqa.com/automation-practice-form
+[INFO] [00:07:24.036] Test Passed
+Test Passed: TC004_verifyPracticeFormOpensStudentRegistrationForm
+]]></system-out>
+  </testcase>
+  <testcase name="TC005_verifyFirstNameAcceptsValidAlphabeticText" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.279">
+    <system-out><![CDATA[Starting Test: TC005_verifyFirstNameAcceptsValidAlphabeticText in suite: TestStudentRegistration
+[INFO] [00:07:24.557] Navigate to DemoQA home page
+[INFO] [00:07:24.689] Click Forms section
+[INFO] [00:07:24.967] Click Practice Form
+[INFO] [00:07:25.284] Enter first name - Pradeep
+[INFO] [00:07:25.310] https://demoqa.com/automation-practice-form
+[INFO] [00:07:25.310] Test Passed
+Test Passed: TC005_verifyFirstNameAcceptsValidAlphabeticText
+]]></system-out>
+  </testcase>
+  <testcase name="TC006_verifyLastNameAcceptsValidAlphabeticText" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.29">
+    <system-out><![CDATA[Starting Test: TC006_verifyLastNameAcceptsValidAlphabeticText in suite: TestStudentRegistration
+[INFO] [00:07:25.835] Navigate to DemoQA home page
+[INFO] [00:07:25.966] Click Forms section
+[INFO] [00:07:26.249] Click Practice Form
+[INFO] [00:07:26.452] Enter last name - Sen
+[INFO] [00:07:26.582] https://demoqa.com/automation-practice-form
+[INFO] [00:07:26.582] Test Passed
+Test Passed: TC006_verifyLastNameAcceptsValidAlphabeticText
+]]></system-out>
+  </testcase>
+  <testcase name="TC007_verifyFirstNameRejectsInvalidNonTextInput" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.285">
+    <failure message="Invalid first-name input was accepted. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Invalid first-name input was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC007_verifyFirstNameRejectsInvalidNonTextInput(TestStudentRegistration.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC007_verifyFirstNameRejectsInvalidNonTextInput in suite: TestStudentRegistration
+[INFO] [00:07:27.112] Navigate to DemoQA home page
+[INFO] [00:07:27.234] Click Forms section
+[INFO] [00:07:27.539] Click Practice Form
+[INFO] [00:07:27.806] Enter first name - 12345@#$%
+java.lang.AssertionError: Invalid first-name input was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC007_verifyFirstNameRejectsInvalidNonTextInput(TestStudentRegistration.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC007_verifyFirstNameRejectsInvalidNonTextInput
+]]></system-out>
+  </testcase>
+  <testcase name="TC008_verifyLastNameRejectsInvalidNonTextInput" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.419">
+    <failure message="Invalid last-name input was accepted. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Invalid last-name input was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC008_verifyLastNameRejectsInvalidNonTextInput(TestStudentRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC008_verifyLastNameRejectsInvalidNonTextInput in suite: TestStudentRegistration
+[INFO] [00:07:28.418] Navigate to DemoQA home page
+[INFO] [00:07:28.544] Click Forms section
+[INFO] [00:07:28.833] Click Practice Form
+[INFO] [00:07:29.192] Enter last name - 12345@#$%
+java.lang.AssertionError: Invalid last-name input was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC008_verifyLastNameRejectsInvalidNonTextInput(TestStudentRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC008_verifyLastNameRejectsInvalidNonTextInput
+]]></system-out>
+  </testcase>
+  <testcase name="TC009_verifyMandatoryValidationForBlankFirstName" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.326">
+    <system-out><![CDATA[Starting Test: TC009_verifyMandatoryValidationForBlankFirstName in suite: TestStudentRegistration
+[INFO] [00:07:29.830] Navigate to DemoQA home page
+[INFO] [00:07:29.955] Click Forms section
+[INFO] [00:07:30.232] Click Practice Form
+[INFO] [00:07:30.473] Enter last name - Sen
+[INFO] [00:07:30.653] Enter email - pradeep.test@example.com
+[INFO] [00:07:30.797] Select gender - Male
+[INFO] [00:07:30.921] Enter mobile number - 9876543210
+[INFO] [00:07:31.456] Select dob - 06/10/2000
+[INFO] [00:07:31.823] Select subject - Maths
+[INFO] [00:07:31.946] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:07:32.183] Select state - Rajasthan
+[INFO] [00:07:32.423] Select city - Jaiselmer
+[INFO] [00:07:32.535] Click to submit the form
+[INFO] [00:07:32.562] https://demoqa.com/automation-practice-form
+[INFO] [00:07:32.562] Test Passed
+Test Passed: TC009_verifyMandatoryValidationForBlankFirstName
+]]></system-out>
+  </testcase>
+  <testcase name="TC010_verifyMandatoryValidationForBlankLastName" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.253">
+    <system-out><![CDATA[Starting Test: TC010_verifyMandatoryValidationForBlankLastName in suite: TestStudentRegistration
+[INFO] [00:07:33.163] Navigate to DemoQA home page
+[INFO] [00:07:33.291] Click Forms section
+[INFO] [00:07:33.553] Click Practice Form
+[INFO] [00:07:33.766] Enter first name - Pradeep
+[INFO] [00:07:33.922] Enter email - pradeep.test@example.com
+[INFO] [00:07:34.059] Select gender - Male
+[INFO] [00:07:34.199] Enter mobile number - 9876543210
+[INFO] [00:07:34.761] Select dob - 06/10/2000
+[INFO] [00:07:35.049] Select subject - Maths
+[INFO] [00:07:35.181] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:07:35.385] Select state - Rajasthan
+[INFO] [00:07:35.631] Select city - Jaiselmer
+[INFO] [00:07:35.736] Click to submit the form
+[INFO] [00:07:35.759] https://demoqa.com/automation-practice-form
+[INFO] [00:07:35.759] Test Passed
+Test Passed: TC010_verifyMandatoryValidationForBlankLastName
+]]></system-out>
+  </testcase>
+  <testcase name="TC011_verifyEmailAcceptsValidFormat" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.217">
+    <system-out><![CDATA[Starting Test: TC011_verifyEmailAcceptsValidFormat in suite: TestStudentRegistration
+[INFO] [00:07:36.405] Navigate to DemoQA home page
+[INFO] [00:07:36.525] Click Forms section
+[INFO] [00:07:36.793] Click Practice Form
+[INFO] [00:07:37.078] Enter email - pradeep@example.com
+[INFO] [00:07:37.097] https://demoqa.com/automation-practice-form
+[INFO] [00:07:37.097] Test Passed
+Test Passed: TC011_verifyEmailAcceptsValidFormat
+]]></system-out>
+  </testcase>
+  <testcase name="TC012_verifyEmailRejectsInvalidFormats" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.666">
+    <system-out><![CDATA[Starting Test: TC012_verifyEmailRejectsInvalidFormats in suite: TestStudentRegistration
+[INFO] [00:07:37.598] Navigate to DemoQA home page
+[INFO] [00:07:37.764] Click Forms section
+[INFO] [00:07:38.076] Click Practice Form
+[INFO] [00:07:38.360] Enter email - pradeep,
+[INFO] [00:07:38.504] Enter email - pradeep@
+[INFO] [00:07:38.630] Enter email - @example.com
+[INFO] [00:07:38.780] Enter email - pradeep@example
+[INFO] [00:07:38.797] https://demoqa.com/automation-practice-form
+[INFO] [00:07:38.797] Test Passed
+Test Passed: TC012_verifyEmailRejectsInvalidFormats
+]]></system-out>
+  </testcase>
+  <testcase name="TC013_verifyMandatoryValidationForBlankEmail" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.032">
+    <failure message="Blank Email was not identified as invalid. expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Blank Email was not identified as invalid. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC013_verifyMandatoryValidationForBlankEmail(TestStudentRegistration.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC013_verifyMandatoryValidationForBlankEmail in suite: TestStudentRegistration
+[INFO] [00:07:39.312] Navigate to DemoQA home page
+[INFO] [00:07:39.433] Click Forms section
+[INFO] [00:07:39.706] Click Practice Form
+[INFO] [00:07:39.954] Enter first name - Pradeep
+[INFO] [00:07:40.057] Enter last name - Sen
+[INFO] [00:07:40.206] Select gender - Male
+[INFO] [00:07:40.315] Enter mobile number - 9876543210
+[INFO] [00:07:40.745] Select dob - 06/10/2000
+[INFO] [00:07:41.034] Select subject - Maths
+[INFO] [00:07:41.161] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:07:41.396] Select state - Rajasthan
+[INFO] [00:07:41.609] Select city - Jaiselmer
+[INFO] [00:07:41.726] Click to submit the form
+java.lang.AssertionError: Blank Email was not identified as invalid. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC013_verifyMandatoryValidationForBlankEmail(TestStudentRegistration.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC013_verifyMandatoryValidationForBlankEmail
+]]></system-out>
+  </testcase>
+  <testcase name="TC014_verifyOnlyOneGenderCanBeSelected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.518">
+    <system-out><![CDATA[Starting Test: TC014_verifyOnlyOneGenderCanBeSelected in suite: TestStudentRegistration
+[INFO] [00:07:42.317] Navigate to DemoQA home page
+[INFO] [00:07:42.460] Click Forms section
+[INFO] [00:07:42.720] Click Practice Form
+[INFO] [00:07:42.986] Select gender - Male
+[INFO] [00:07:43.125] Select gender - Female
+[INFO] [00:07:43.290] Select gender - Other
+[INFO] [00:07:43.318] https://demoqa.com/automation-practice-form
+[INFO] [00:07:43.319] Test Passed
+Test Passed: TC014_verifyOnlyOneGenderCanBeSelected
+]]></system-out>
+  </testcase>
+  <testcase name="TC015_verifyGenderIsMandatory" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.019">
+    <system-out><![CDATA[Starting Test: TC015_verifyGenderIsMandatory in suite: TestStudentRegistration
+[INFO] [00:07:43.850] Navigate to DemoQA home page
+[INFO] [00:07:43.975] Click Forms section
+[INFO] [00:07:44.245] Click Practice Form
+[INFO] [00:07:44.444] Enter first name - Pradeep
+[INFO] [00:07:44.593] Enter last name - Sen
+[INFO] [00:07:44.717] Enter email - pradeep.test@example.com
+[INFO] [00:07:44.835] Enter mobile number - 9876543210
+[INFO] [00:07:45.305] Select dob - 06/10/2000
+[INFO] [00:07:45.585] Select subject - Maths
+[INFO] [00:07:45.719] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:07:45.942] Select state - Rajasthan
+[INFO] [00:07:46.171] Select city - Jaiselmer
+[INFO] [00:07:46.275] Click to submit the form
+[INFO] [00:07:46.330] https://demoqa.com/automation-practice-form
+[INFO] [00:07:46.330] Test Passed
+Test Passed: TC015_verifyGenderIsMandatory
+]]></system-out>
+  </testcase>
+  <testcase name="TC016_verifyValidTenDigitMobileNumberIsAccepted" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.171">
+    <system-out><![CDATA[Starting Test: TC016_verifyValidTenDigitMobileNumberIsAccepted in suite: TestStudentRegistration
+[INFO] [00:07:46.838] Navigate to DemoQA home page
+[INFO] [00:07:46.988] Click Forms section
+[INFO] [00:07:47.264] Click Practice Form
+[INFO] [00:07:47.497] Enter mobile number - 9876543210
+[INFO] [00:07:47.515] https://demoqa.com/automation-practice-form
+[INFO] [00:07:47.516] Test Passed
+Test Passed: TC016_verifyValidTenDigitMobileNumberIsAccepted
+]]></system-out>
+  </testcase>
+  <testcase name="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.186">
+    <failure message="Invalid starting digit was accepted. expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Invalid starting digit was accepted. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC017_verifyMobileRejectsNumberBeginningWithZeroToFive(TestStudentRegistration.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC017_verifyMobileRejectsNumberBeginningWithZeroToFive in suite: TestStudentRegistration
+[INFO] [00:07:48.045] Navigate to DemoQA home page
+[INFO] [00:07:48.166] Click Forms section
+[INFO] [00:07:48.427] Click Practice Form
+[INFO] [00:07:48.669] Enter mobile number - 5123456789
+java.lang.AssertionError: Invalid starting digit was accepted. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC017_verifyMobileRejectsNumberBeginningWithZeroToFive(TestStudentRegistration.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC017_verifyMobileRejectsNumberBeginningWithZeroToFive
+]]></system-out>
+  </testcase>
+  <testcase name="TC018_verifyMobileRejectsFewerThanTenDigits" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.08">
+    <system-out><![CDATA[Starting Test: TC018_verifyMobileRejectsFewerThanTenDigits in suite: TestStudentRegistration
+[INFO] [00:07:49.196] Navigate to DemoQA home page
+[INFO] [00:07:49.308] Click Forms section
+[INFO] [00:07:49.602] Click Practice Form
+[INFO] [00:07:49.747] Enter mobile number - 987654321
+[INFO] [00:07:49.770] https://demoqa.com/automation-practice-form
+[INFO] [00:07:49.770] Test Passed
+Test Passed: TC018_verifyMobileRejectsFewerThanTenDigits
+]]></system-out>
+  </testcase>
+  <testcase name="TC019_verifyMobileRejectsMoreThanTenDigits" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.086">
+    <system-out><![CDATA[Starting Test: TC019_verifyMobileRejectsMoreThanTenDigits in suite: TestStudentRegistration
+[INFO] [00:07:50.272] Navigate to DemoQA home page
+[INFO] [00:07:50.396] Click Forms section
+[INFO] [00:07:50.676] Click Practice Form
+[INFO] [00:07:50.821] Enter mobile number - 98765432101
+[INFO] [00:07:50.844] https://demoqa.com/automation-practice-form
+[INFO] [00:07:50.844] Test Passed
+Test Passed: TC019_verifyMobileRejectsMoreThanTenDigits
+]]></system-out>
+  </testcase>
+  <testcase name="TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.308">
+    <system-out><![CDATA[Starting Test: TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters in suite: TestStudentRegistration
+[INFO] [00:07:51.374] Navigate to DemoQA home page
+[INFO] [00:07:51.503] Click Forms section
+[INFO] [00:07:51.785] Click Practice Form
+[INFO] [00:07:52.119] Enter mobile number - 98AB@43210
+[INFO] [00:07:52.139] https://demoqa.com/automation-practice-form
+[INFO] [00:07:52.139] Test Passed
+Test Passed: TC020_verifyMobileRejectsAlphabeticAndSpecialCharacters
+]]></system-out>
+  </testcase>
+  <testcase name="TC021_verifyMobileIsMandatory" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.039">
+    <system-out><![CDATA[Starting Test: TC021_verifyMobileIsMandatory in suite: TestStudentRegistration
+[INFO] [00:07:52.695] Navigate to DemoQA home page
+[INFO] [00:07:52.821] Click Forms section
+[INFO] [00:07:53.111] Click Practice Form
+[INFO] [00:07:53.254] Enter first name - Pradeep
+[INFO] [00:07:53.347] Enter last name - Sen
+[INFO] [00:07:53.558] Enter email - pradeep.test@example.com
+[INFO] [00:07:53.705] Select gender - Male
+[INFO] [00:07:54.215] Select dob - 06/10/2000
+[INFO] [00:07:54.495] Select subject - Maths
+[INFO] [00:07:54.616] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:07:54.826] Select state - Rajasthan
+[INFO] [00:07:55.059] Select city - Jaiselmer
+[INFO] [00:07:55.176] Click to submit the form
+[INFO] [00:07:55.204] https://demoqa.com/automation-practice-form
+[INFO] [00:07:55.204] Test Passed
+Test Passed: TC021_verifyMobileIsMandatory
+]]></system-out>
+  </testcase>
+  <testcase name="TC022_verifyDateOfBirthDatePickerOpens" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.136">
+    <system-out><![CDATA[Starting Test: TC022_verifyDateOfBirthDatePickerOpens in suite: TestStudentRegistration
+[INFO] [00:07:55.736] Navigate to DemoQA home page
+[INFO] [00:07:55.862] Click Forms section
+[INFO] [00:07:56.147] Click Practice Form
+[INFO] [00:07:56.325] https://demoqa.com/automation-practice-form
+[INFO] [00:07:56.325] Test Passed
+Test Passed: TC022_verifyDateOfBirthDatePickerOpens
+]]></system-out>
+  </testcase>
+  <testcase name="TC023_verifyCurrentDateIsAutoSelectedByDatePicker" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.14">
+    <system-out><![CDATA[Starting Test: TC023_verifyCurrentDateIsAutoSelectedByDatePicker in suite: TestStudentRegistration
+[INFO] [00:07:56.870] Navigate to DemoQA home page
+[INFO] [00:07:56.999] Click Forms section
+[INFO] [00:07:57.289] Click Practice Form
+[INFO] [00:07:57.465] https://demoqa.com/automation-practice-form
+[INFO] [00:07:57.465] Test Passed
+Test Passed: TC023_verifyCurrentDateIsAutoSelectedByDatePicker
+]]></system-out>
+  </testcase>
+  <testcase name="TC024_verifySelectedDatePopulatesFieldAndPickerCloses" classname="test.robomq.com.testClasses.TestStudentRegistration" time="11.445">
+    <system-out><![CDATA[Starting Test: TC024_verifySelectedDatePopulatesFieldAndPickerCloses in suite: TestStudentRegistration
+[INFO] [00:07:57.981] Navigate to DemoQA home page
+[INFO] [00:07:58.095] Click Forms section
+[INFO] [00:07:58.530] Click Practice Form
+[INFO] [00:07:58.913] Select dob - 06/10/2026
+[INFO] [00:08:08.978] https://demoqa.com/automation-practice-form
+[INFO] [00:08:08.978] Test Passed
+Test Passed: TC024_verifySelectedDatePopulatesFieldAndPickerCloses
+]]></system-out>
+  </testcase>
+  <testcase name="TC025_verifyDateOfBirthCannotBeLeftInvalid" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.069">
+    <failure message="DOB field permits invalid manual input. expected [true] but found [null]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: DOB field permits invalid manual input. expected [true] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC025_verifyDateOfBirthCannotBeLeftInvalid(TestStudentRegistration.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC025_verifyDateOfBirthCannotBeLeftInvalid in suite: TestStudentRegistration
+[INFO] [00:08:09.472] Navigate to DemoQA home page
+[INFO] [00:08:09.608] Click Forms section
+[INFO] [00:08:09.964] Click Practice Form
+java.lang.AssertionError: DOB field permits invalid manual input. expected [true] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC025_verifyDateOfBirthCannotBeLeftInvalid(TestStudentRegistration.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC025_verifyDateOfBirthCannotBeLeftInvalid
+]]></system-out>
+  </testcase>
+  <testcase name="TC026_verifySubjectCanBeSearchedUsingPartialText" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.216">
+    <system-out><![CDATA[Starting Test: TC026_verifySubjectCanBeSearchedUsingPartialText in suite: TestStudentRegistration
+[INFO] [00:08:10.518] Navigate to DemoQA home page
+[INFO] [00:08:10.646] Click Forms section
+[INFO] [00:08:10.913] Click Practice Form
+[INFO] [00:08:11.210] Search subject - Ma
+[INFO] [00:08:11.238] Check subject option - Maths - true
+[INFO] [00:08:11.243] https://demoqa.com/automation-practice-form
+[INFO] [00:08:11.243] Test Passed
+Test Passed: TC026_verifySubjectCanBeSearchedUsingPartialText
+]]></system-out>
+  </testcase>
+  <testcase name="TC027_verifyUserCanSelectSubjectFromSuggestions" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.34">
+    <system-out><![CDATA[Starting Test: TC027_verifyUserCanSelectSubjectFromSuggestions in suite: TestStudentRegistration
+[INFO] [00:08:11.719] Navigate to DemoQA home page
+[INFO] [00:08:11.831] Click Forms section
+[INFO] [00:08:12.082] Click Practice Form
+[INFO] [00:08:12.568] Select subject - Maths
+[INFO] [00:08:12.584] https://demoqa.com/automation-practice-form
+[INFO] [00:08:12.585] Test Passed
+Test Passed: TC027_verifyUserCanSelectSubjectFromSuggestions
+]]></system-out>
+  </testcase>
+  <testcase name="TC028_verifyMaximumOfThreeSubjectsCanBeSelected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="2.089">
+    <failure message="More than three subjects were selected. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: More than three subjects were selected. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC028_verifyMaximumOfThreeSubjectsCanBeSelected(TestStudentRegistration.java:302)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC028_verifyMaximumOfThreeSubjectsCanBeSelected in suite: TestStudentRegistration
+[INFO] [00:08:13.070] Navigate to DemoQA home page
+[INFO] [00:08:13.220] Click Forms section
+[INFO] [00:08:13.559] Click Practice Form
+[INFO] [00:08:13.915] Select subject - Maths
+[INFO] [00:08:14.147] Select subject - Physics
+[INFO] [00:08:14.415] Select subject - Chemistry
+[INFO] [00:08:14.662] Select subject - Biology
+java.lang.AssertionError: More than three subjects were selected. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC028_verifyMaximumOfThreeSubjectsCanBeSelected(TestStudentRegistration.java:302)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC028_verifyMaximumOfThreeSubjectsCanBeSelected
+]]></system-out>
+  </testcase>
+  <testcase name="TC029_verifyInvalidSubjectCannotBeSelected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="11.297">
+    <system-out><![CDATA[Starting Test: TC029_verifyInvalidSubjectCannotBeSelected in suite: TestStudentRegistration
+[INFO] [00:08:15.148] Navigate to DemoQA home page
+[INFO] [00:08:15.267] Click Forms section
+[INFO] [00:08:15.603] Click Practice Form
+[INFO] [00:08:15.924] Search subject - ZZZUnknownSubject
+[INFO] [00:08:25.948] Check subject option - ZZZUnknownSubject - false
+[INFO] [00:08:25.962] https://demoqa.com/automation-practice-form
+[INFO] [00:08:25.962] Test Passed
+Test Passed: TC029_verifyInvalidSubjectCannotBeSelected
+]]></system-out>
+  </testcase>
+  <testcase name="TC030_verifyMultipleHobbiesCanBeSelected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.328">
+    <system-out><![CDATA[Starting Test: TC030_verifyMultipleHobbiesCanBeSelected in suite: TestStudentRegistration
+[INFO] [00:08:26.446] Navigate to DemoQA home page
+[INFO] [00:08:26.576] Click Forms section
+[INFO] [00:08:26.857] Click Practice Form
+[INFO] [00:08:27.076] Select gender - Male
+[INFO] [00:08:27.268] https://demoqa.com/automation-practice-form
+[INFO] [00:08:27.268] Test Passed
+Test Passed: TC030_verifyMultipleHobbiesCanBeSelected
+]]></system-out>
+  </testcase>
+  <testcase name="TC031_verifySelectedHobbyCanBeDeselected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.132">
+    <system-out><![CDATA[Starting Test: TC031_verifySelectedHobbyCanBeDeselected in suite: TestStudentRegistration
+[INFO] [00:08:27.790] Navigate to DemoQA home page
+[INFO] [00:08:27.907] Click Forms section
+[INFO] [00:08:28.153] Click Practice Form
+[INFO] [00:08:28.420] https://demoqa.com/automation-practice-form
+[INFO] [00:08:28.420] Test Passed
+Test Passed: TC031_verifySelectedHobbyCanBeDeselected
+]]></system-out>
+  </testcase>
+  <testcase name="TC032_verifyValidJpegFileCanBeUploaded" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.994">
+    <system-out><![CDATA[Starting Test: TC032_verifyValidJpegFileCanBeUploaded in suite: TestStudentRegistration
+[INFO] [00:08:28.921] Navigate to DemoQA home page
+[INFO] [00:08:29.041] Click Forms section
+[INFO] [00:08:29.306] Click Practice Form
+Uploading Document .....
+[INFO] [00:08:29.381] Upload file - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/Profile.jpg
+[INFO] [00:08:29.399] https://demoqa.com/automation-practice-form
+[INFO] [00:08:29.399] Test Passed
+Test Passed: TC032_verifyValidJpegFileCanBeUploaded
+]]></system-out>
+  </testcase>
+  <testcase name="TC033_verifyValidPngFileCanBeUploaded" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.989">
+    <system-out><![CDATA[Starting Test: TC033_verifyValidPngFileCanBeUploaded in suite: TestStudentRegistration
+[INFO] [00:08:29.911] Navigate to DemoQA home page
+[INFO] [00:08:30.034] Click Forms section
+[INFO] [00:08:30.299] Click Practice Form
+Uploading Document .....
+[INFO] [00:08:30.377] Upload file - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/Profile.png
+[INFO] [00:08:30.398] https://demoqa.com/automation-practice-form
+[INFO] [00:08:30.399] Test Passed
+Test Passed: TC033_verifyValidPngFileCanBeUploaded
+]]></system-out>
+  </testcase>
+  <testcase name="TC034_verifyUnsupportedFileTypeIsRejected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.986">
+    <failure message="Unsupported PDF file was accepted. expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Unsupported PDF file was accepted. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC034_verifyUnsupportedFileTypeIsRejected(TestStudentRegistration.java:358)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC034_verifyUnsupportedFileTypeIsRejected in suite: TestStudentRegistration
+[INFO] [00:08:30.908] Navigate to DemoQA home page
+[INFO] [00:08:31.027] Click Forms section
+[INFO] [00:08:31.291] Click Practice Form
+Uploading Document .....
+[INFO] [00:08:31.373] Upload file - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/Profile.pdf
+java.lang.AssertionError: Unsupported PDF file was accepted. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC034_verifyUnsupportedFileTypeIsRejected(TestStudentRegistration.java:358)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC034_verifyUnsupportedFileTypeIsRejected
+]]></system-out>
+  </testcase>
+  <testcase name="TC035_verifyFileLargerThanTwoMBIsRejected" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.997">
+    <failure message="File larger than 2 MB was accepted. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: File larger than 2 MB was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC035_verifyFileLargerThanTwoMBIsRejected(TestStudentRegistration.java:368)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC035_verifyFileLargerThanTwoMBIsRejected in suite: TestStudentRegistration
+[INFO] [00:08:31.909] Navigate to DemoQA home page
+[INFO] [00:08:32.026] Click Forms section
+[INFO] [00:08:32.279] Click Practice Form
+Uploading Document .....
+[INFO] [00:08:32.361] Upload file - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/5MB.jpg
+java.lang.AssertionError: File larger than 2 MB was accepted. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC035_verifyFileLargerThanTwoMBIsRejected(TestStudentRegistration.java:368)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC035_verifyFileLargerThanTwoMBIsRejected
+]]></system-out>
+  </testcase>
+  <testcase name="TC036_verifyFileExactlyAtTwoMBBoundary" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.084">
+    <system-out><![CDATA[Starting Test: TC036_verifyFileExactlyAtTwoMBBoundary in suite: TestStudentRegistration
+[INFO] [00:08:32.885] Navigate to DemoQA home page
+[INFO] [00:08:32.999] Click Forms section
+[INFO] [00:08:33.275] Click Practice Form
+Uploading Document .....
+[INFO] [00:08:33.449] Upload file - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/2MB.jpg
+[INFO] [00:08:33.483] https://demoqa.com/automation-practice-form
+[INFO] [00:08:33.483] Test Passed
+Test Passed: TC036_verifyFileExactlyAtTwoMBBoundary
+]]></system-out>
+  </testcase>
+  <testcase name="TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.128">
+    <system-out><![CDATA[Starting Test: TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters in suite: TestStudentRegistration
+[INFO] [00:08:33.972] Navigate to DemoQA home page
+[INFO] [00:08:34.092] Click Forms section
+[INFO] [00:08:34.381] Click Practice Form
+[INFO] [00:08:34.539] Enter current address - 12/A Main Road, Jaipur - 302001
+[INFO] [00:08:34.562] https://demoqa.com/automation-practice-form
+[INFO] [00:08:34.562] Test Passed
+Test Passed: TC037_verifyCurrentAddressAcceptsTextNumbersAndSpecialCharacters
+]]></system-out>
+  </testcase>
+  <testcase name="TC038_verifyCurrentAddressRejectsInputExceeding100Characters" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.188">
+    <failure message="Address exceeded 100 characters. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Address exceeded 100 characters. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC038_verifyCurrentAddressRejectsInputExceeding100Characters(TestStudentRegistration.java:395)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC038_verifyCurrentAddressRejectsInputExceeding100Characters in suite: TestStudentRegistration
+[INFO] [00:08:35.110] Navigate to DemoQA home page
+[INFO] [00:08:35.228] Click Forms section
+[INFO] [00:08:35.491] Click Practice Form
+[INFO] [00:08:35.770] Enter current address - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+java.lang.AssertionError: Address exceeded 100 characters. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC038_verifyCurrentAddressRejectsInputExceeding100Characters(TestStudentRegistration.java:395)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC038_verifyCurrentAddressRejectsInputExceeding100Characters
+]]></system-out>
+  </testcase>
+  <testcase name="TC039_verifyCurrentAddressAcceptsExactly100Characters" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.256">
+    <system-out><![CDATA[Starting Test: TC039_verifyCurrentAddressAcceptsExactly100Characters in suite: TestStudentRegistration
+[INFO] [00:08:36.295] Navigate to DemoQA home page
+[INFO] [00:08:36.422] Click Forms section
+[INFO] [00:08:36.710] Click Practice Form
+[INFO] [00:08:36.995] Enter current address - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[INFO] [00:08:37.012] https://demoqa.com/automation-practice-form
+[INFO] [00:08:37.013] Test Passed
+Test Passed: TC039_verifyCurrentAddressAcceptsExactly100Characters
+]]></system-out>
+  </testcase>
+  <testcase name="TC040_verifyCurrentAddressIsMandatory" classname="test.robomq.com.testClasses.TestStudentRegistration" time="2.814">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC040_verifyCurrentAddressIsMandatory(TestStudentRegistration.java:414)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC040_verifyCurrentAddressIsMandatory in suite: TestStudentRegistration
+[INFO] [00:08:37.560] Navigate to DemoQA home page
+[INFO] [00:08:37.677] Click Forms section
+[INFO] [00:08:37.990] Click Practice Form
+[INFO] [00:08:38.144] Enter first name - Pradeep
+[INFO] [00:08:38.247] Enter last name - Sen
+[INFO] [00:08:38.374] Enter email - pradeep.test@example.com
+[INFO] [00:08:38.492] Select gender - Male
+[INFO] [00:08:38.596] Enter mobile number - 9876543210
+[INFO] [00:08:39.020] Select dob - 06/10/2000
+[INFO] [00:08:39.310] Select subject - Maths
+[INFO] [00:08:39.501] Select state - Rajasthan
+[INFO] [00:08:39.689] Select city - Jaiselmer
+[INFO] [00:08:39.800] Click to submit the form
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC040_verifyCurrentAddressIsMandatory(TestStudentRegistration.java:414)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC040_verifyCurrentAddressIsMandatory
+]]></system-out>
+  </testcase>
+  <testcase name="TC041_verifyStateDropdownOpensAndDisplaysAvailableStates" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.236">
+    <system-out><![CDATA[Starting Test: TC041_verifyStateDropdownOpensAndDisplaysAvailableStates in suite: TestStudentRegistration
+[INFO] [00:08:40.417] Navigate to DemoQA home page
+[INFO] [00:08:40.544] Click Forms section
+[INFO] [00:08:40.797] Click Practice Form
+[INFO] [00:08:41.062] Select state - Rajasthan
+[INFO] [00:08:41.083] Check City dropdown is enabled - true
+[INFO] [00:08:41.087] https://demoqa.com/automation-practice-form
+[INFO] [00:08:41.087] Test Passed
+Test Passed: TC041_verifyStateDropdownOpensAndDisplaysAvailableStates
+]]></system-out>
+  </testcase>
+  <testcase name="TC042_verifyUserCanSelectState" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.168">
+    <system-out><![CDATA[Starting Test: TC042_verifyUserCanSelectState in suite: TestStudentRegistration
+[INFO] [00:08:41.580] Navigate to DemoQA home page
+[INFO] [00:08:41.696] Click Forms section
+[INFO] [00:08:41.987] Click Practice Form
+[INFO] [00:08:42.234] Select state - Rajasthan
+[INFO] [00:08:42.250] Check City dropdown is enabled - true
+[INFO] [00:08:42.254] https://demoqa.com/automation-practice-form
+[INFO] [00:08:42.254] Test Passed
+Test Passed: TC042_verifyUserCanSelectState
+]]></system-out>
+  </testcase>
+  <testcase name="TC043_verifyCityDropdownIsPopulatedAfterStateSelection" classname="test.robomq.com.testClasses.TestStudentRegistration" time="1.295">
+    <system-out><![CDATA[Starting Test: TC043_verifyCityDropdownIsPopulatedAfterStateSelection in suite: TestStudentRegistration
+[INFO] [00:08:42.761] Navigate to DemoQA home page
+[INFO] [00:08:42.889] Click Forms section
+[INFO] [00:08:43.191] Click Practice Form
+[INFO] [00:08:43.438] Select state - Rajasthan
+[INFO] [00:08:43.525] Open City dropdown
+[INFO] [00:08:43.543] Check city option - Jaiselmer - true
+[INFO] [00:08:43.550] https://demoqa.com/automation-practice-form
+[INFO] [00:08:43.550] Test Passed
+Test Passed: TC043_verifyCityDropdownIsPopulatedAfterStateSelection
+]]></system-out>
+  </testcase>
+  <testcase name="TC044_verifyCityOptionsAreRestrictedToSelectedState" classname="test.robomq.com.testClasses.TestStudentRegistration" time="11.524">
+    <system-out><![CDATA[Starting Test: TC044_verifyCityOptionsAreRestrictedToSelectedState in suite: TestStudentRegistration
+[INFO] [00:08:44.091] Navigate to DemoQA home page
+[INFO] [00:08:44.210] Click Forms section
+[INFO] [00:08:44.503] Click Practice Form
+[INFO] [00:08:44.862] Select state - Rajasthan
+[INFO] [00:08:45.001] Open City dropdown
+[INFO] [00:08:45.021] Check city option - Jaiselmer - true
+[INFO] [00:08:55.082] Check city option - Agra - false
+[INFO] [00:08:55.091] https://demoqa.com/automation-practice-form
+[INFO] [00:08:55.091] Test Passed
+Test Passed: TC044_verifyCityOptionsAreRestrictedToSelectedState
+]]></system-out>
+  </testcase>
+  <testcase name="TC045_verifyCityCannotBeSelectedBeforeStateSelection" classname="test.robomq.com.testClasses.TestStudentRegistration" time="0.989">
+    <system-out><![CDATA[Starting Test: TC045_verifyCityCannotBeSelectedBeforeStateSelection in suite: TestStudentRegistration
+[INFO] [00:08:55.578] Navigate to DemoQA home page
+[INFO] [00:08:55.693] Click Forms section
+[INFO] [00:08:55.970] Click Practice Form
+[INFO] [00:08:55.997] Check City dropdown is enabled - false
+[INFO] [00:08:56.004] https://demoqa.com/automation-practice-form
+[INFO] [00:08:56.004] Test Passed
+Test Passed: TC045_verifyCityCannotBeSelectedBeforeStateSelection
+]]></system-out>
+  </testcase>
+  <testcase name="TC046_verifyChangingStateRefreshesCityOptions" classname="test.robomq.com.testClasses.TestStudentRegistration" time="11.64">
+    <system-out><![CDATA[Starting Test: TC046_verifyChangingStateRefreshesCityOptions in suite: TestStudentRegistration
+[INFO] [00:08:56.588] Navigate to DemoQA home page
+[INFO] [00:08:56.702] Click Forms section
+[INFO] [00:08:56.952] Click Practice Form
+[INFO] [00:08:57.239] Select state - Rajasthan
+[INFO] [00:08:57.420] Select city - Jaiselmer
+[INFO] [00:08:57.590] Select state - Uttar Pradesh
+[INFO] [00:08:57.686] Open City dropdown
+[INFO] [00:09:07.733] Check city option - Jaiselmer - false
+[INFO] [00:09:07.744] https://demoqa.com/automation-practice-form
+[INFO] [00:09:07.744] Test Passed
+Test Passed: TC046_verifyChangingStateRefreshesCityOptions
+]]></system-out>
+  </testcase>
+  <testcase name="TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing" classname="test.robomq.com.testClasses.TestStudentRegistration" time="11.112">
+    <system-out><![CDATA[Starting Test: TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing in suite: TestStudentRegistration
+[INFO] [00:09:08.234] Navigate to DemoQA home page
+[INFO] [00:09:08.367] Click Forms section
+[INFO] [00:09:08.665] Click Practice Form
+[INFO] [00:09:08.780] Click to submit the form
+[INFO] [00:09:18.820] https://demoqa.com/automation-practice-form
+[INFO] [00:09:18.821] Test Passed
+Test Passed: TC047_verifyFormCannotBeSubmittedWhenMandatoryFieldsAreMissing
+]]></system-out>
+  </testcase>
+  <testcase name="TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData" classname="test.robomq.com.testClasses.TestStudentRegistration" time="2.985">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData(TestStudentRegistration.java:485)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData in suite: TestStudentRegistration
+[INFO] [00:09:19.338] Navigate to DemoQA home page
+[INFO] [00:09:19.474] Click Forms section
+[INFO] [00:09:19.788] Click Practice Form
+[INFO] [00:09:19.908] Enter first name - Pradeep
+[INFO] [00:09:19.998] Enter last name - Sen
+[INFO] [00:09:20.110] Enter email - pradeep.valid@example.com
+[INFO] [00:09:20.214] Select gender - Male
+[INFO] [00:09:20.300] Enter mobile number - 9876543215
+[INFO] [00:09:20.736] Select dob - 06/10/2000
+[INFO] [00:09:20.991] Select subject - Maths
+[INFO] [00:09:21.100] Select hobby - Sports
+[INFO] [00:09:21.226] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:21.421] Select state - Rajasthan
+[INFO] [00:09:21.623] Select city - Jaiselmer
+[INFO] [00:09:21.729] Click to submit the form
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData(TestStudentRegistration.java:485)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC048_verifyFormSubmitsSuccessfullyWithValidMandatoryData
+]]></system-out>
+  </testcase>
+  <testcase name="TC049_verifySubmittedValuesExactlyMatchEnteredValues" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.39">
+    <system-out><![CDATA[Starting Test: TC049_verifySubmittedValuesExactlyMatchEnteredValues in suite: TestStudentRegistration
+[INFO] [00:09:22.331] Navigate to DemoQA home page
+[INFO] [00:09:22.442] Click Forms section
+[INFO] [00:09:22.698] Click Practice Form
+[INFO] [00:09:22.930] Enter first name - Pradeep
+[INFO] [00:09:23.038] Enter last name - Sen
+[INFO] [00:09:23.198] Enter email - pradeep.unique@example.com
+[INFO] [00:09:23.311] Select gender - Male
+[INFO] [00:09:23.417] Enter mobile number - 9876543216
+[INFO] [00:09:23.837] Select dob - 06/10/2000
+[INFO] [00:09:24.158] Select subject - Maths
+[INFO] [00:09:24.261] Select hobby - Sports
+[INFO] [00:09:24.400] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:24.590] Select state - Rajasthan
+[INFO] [00:09:24.823] Select city - Jaiselmer
+[INFO] [00:09:24.927] Click to submit the form
+[INFO] [00:09:25.183] Close submission confirmation popup
+[INFO] [00:09:25.188] https://demoqa.com/automation-practice-form
+[INFO] [00:09:25.188] Test Passed
+Test Passed: TC049_verifySubmittedValuesExactlyMatchEnteredValues
+]]></system-out>
+  </testcase>
+  <testcase name="TC050_verifySuccessPopupDisplaysExactConfirmationMessage" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.777">
+    <system-out><![CDATA[Starting Test: TC050_verifySuccessPopupDisplaysExactConfirmationMessage in suite: TestStudentRegistration
+[INFO] [00:09:25.701] Navigate to DemoQA home page
+[INFO] [00:09:25.823] Click Forms section
+[INFO] [00:09:26.090] Click Practice Form
+[INFO] [00:09:26.224] Enter first name - Pradeep
+[INFO] [00:09:26.397] Enter last name - Sen
+[INFO] [00:09:26.545] Enter email - pradeep.popup@example.com
+[INFO] [00:09:26.674] Select gender - Male
+[INFO] [00:09:26.811] Enter mobile number - 9876543217
+[INFO] [00:09:27.233] Select dob - 06/10/2000
+[INFO] [00:09:27.493] Select subject - Maths
+[INFO] [00:09:27.606] Select hobby - Sports
+[INFO] [00:09:27.757] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:27.964] Select state - Rajasthan
+[INFO] [00:09:28.181] Select city - Jaiselmer
+[INFO] [00:09:28.279] Click to submit the form
+[INFO] [00:09:28.953] Close submission confirmation popup
+[INFO] [00:09:28.957] https://demoqa.com/automation-practice-form
+[INFO] [00:09:28.957] Test Passed
+Test Passed: TC050_verifySuccessPopupDisplaysExactConfirmationMessage
+]]></system-out>
+  </testcase>
+  <testcase name="TC051_verifyCloseButtonClosesSuccessPopup" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.478">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC051_verifyCloseButtonClosesSuccessPopup(TestStudentRegistration.java:522)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC051_verifyCloseButtonClosesSuccessPopup in suite: TestStudentRegistration
+[INFO] [00:09:29.481] Navigate to DemoQA home page
+[INFO] [00:09:29.596] Click Forms section
+[INFO] [00:09:29.851] Click Practice Form
+[INFO] [00:09:29.971] Enter first name - Pradeep
+[INFO] [00:09:30.067] Enter last name - Sen
+[INFO] [00:09:30.201] Enter email - pradeep.close@example.com
+[INFO] [00:09:30.318] Select gender - Male
+[INFO] [00:09:30.404] Enter mobile number - 9876543218
+[INFO] [00:09:30.808] Select dob - 06/10/2000
+[INFO] [00:09:31.100] Select subject - Maths
+[INFO] [00:09:31.205] Select hobby - Sports
+[INFO] [00:09:31.328] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:31.525] Select state - Rajasthan
+[INFO] [00:09:31.707] Select city - Jaiselmer
+[INFO] [00:09:31.818] Click to submit the form
+[INFO] [00:09:32.448] Close submission confirmation popup
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC051_verifyCloseButtonClosesSuccessPopup(TestStudentRegistration.java:522)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC051_verifyCloseButtonClosesSuccessPopup
+]]></system-out>
+  </testcase>
+  <testcase name="TC052_verifyCloseButtonRedirectsToHomePage" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.296">
+    <system-out><![CDATA[Starting Test: TC052_verifyCloseButtonRedirectsToHomePage in suite: TestStudentRegistration
+[INFO] [00:09:32.984] Navigate to DemoQA home page
+[INFO] [00:09:33.099] Click Forms section
+[INFO] [00:09:33.370] Click Practice Form
+[INFO] [00:09:33.594] Enter first name - Pradeep
+[INFO] [00:09:33.691] Enter last name - Sen
+[INFO] [00:09:33.830] Enter email - pradeep.home@example.com
+[INFO] [00:09:33.966] Select gender - Male
+[INFO] [00:09:34.070] Enter mobile number - 9876543219
+[INFO] [00:09:34.508] Select dob - 06/10/2000
+[INFO] [00:09:34.825] Select subject - Maths
+[INFO] [00:09:34.963] Select hobby - Sports
+[INFO] [00:09:35.088] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:35.290] Select state - Rajasthan
+[INFO] [00:09:35.493] Select city - Jaiselmer
+[INFO] [00:09:35.595] Click to submit the form
+[INFO] [00:09:35.729] Close submission confirmation popup
+[INFO] [00:09:35.742] https://demoqa.com/automation-practice-form
+[INFO] [00:09:35.742] Test Passed
+Test Passed: TC052_verifyCloseButtonRedirectsToHomePage
+]]></system-out>
+  </testcase>
+  <testcase name="TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick" classname="test.robomq.com.testClasses.TestStudentRegistration" time="3.19">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick(TestStudentRegistration.java:544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting Test: TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick in suite: TestStudentRegistration
+[INFO] [00:09:36.258] Navigate to DemoQA home page
+[INFO] [00:09:36.379] Click Forms section
+[INFO] [00:09:36.667] Click Practice Form
+[INFO] [00:09:36.887] Enter first name - Pradeep
+[INFO] [00:09:37.002] Enter last name - Sen
+[INFO] [00:09:37.150] Enter email - pradeep.double@example.com
+[INFO] [00:09:37.292] Select gender - Male
+[INFO] [00:09:37.384] Enter mobile number - 9876543220
+[INFO] [00:09:37.808] Select dob - 06/10/2000
+[INFO] [00:09:38.088] Select subject - Maths
+[INFO] [00:09:38.195] Select hobby - Sports
+[INFO] [00:09:38.336] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:38.564] Select state - Rajasthan
+[INFO] [00:09:38.781] Select city - Jaiselmer
+[INFO] [00:09:38.886] Click to submit the form
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at test.robomq.com.testClasses.TestStudentRegistration.TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick(TestStudentRegistration.java:544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Test Failed: TC053_verifyFormDoesNotSubmitTwiceOnRapidDoubleClick
+]]></system-out>
+  </testcase>
+  <testcase name="TC054_verifyEnteredDataIsRetainedWhenValidationFails" classname="test.robomq.com.testClasses.TestStudentRegistration" time="2.566">
+    <system-out><![CDATA[Starting Test: TC054_verifyEnteredDataIsRetainedWhenValidationFails in suite: TestStudentRegistration
+[INFO] [00:09:39.465] Navigate to DemoQA home page
+[INFO] [00:09:39.585] Click Forms section
+[INFO] [00:09:39.866] Click Practice Form
+[INFO] [00:09:40.021] Enter first name - Pradeep
+[INFO] [00:09:40.123] Enter last name - Sen
+[INFO] [00:09:40.277] Enter email - pradeep.retain@example.com
+[INFO] [00:09:40.407] Select gender - Male
+[INFO] [00:09:40.511] Enter mobile number - 987654321
+[INFO] [00:09:40.627] Click to submit the form
+[INFO] [00:09:41.054] Navigate to DemoQA home page
+[INFO] [00:09:41.171] Click Forms section
+[INFO] [00:09:41.446] Click Practice Form
+[INFO] [00:09:41.487] https://demoqa.com/automation-practice-form
+[INFO] [00:09:41.487] Test Passed
+Test Passed: TC054_verifyEnteredDataIsRetainedWhenValidationFails
+]]></system-out>
+  </testcase>
+  <testcase name="TC055_verifyStudentRegistrationWithAllValidData" classname="test.robomq.com.testClasses.TestStudentRegistration" time="2.662">
+    <system-out><![CDATA[Starting Test: TC055_verifyStudentRegistrationWithAllValidData in suite: TestStudentRegistration
+[INFO] [00:09:41.739] Enter first name - Pradeep
+[INFO] [00:09:41.843] Enter last name - Sen
+[INFO] [00:09:41.980] Enter email - pradeep.sen@example.com
+[INFO] [00:09:42.084] Select gender - Male
+[INFO] [00:09:42.193] Enter mobile number - 9876543210
+[INFO] [00:09:42.741] Select dob - 06/10/2000
+[INFO] [00:09:43.019] Select subject - Maths
+[INFO] [00:09:43.344] Select subject - Physics
+[INFO] [00:09:43.471] Select hobby - Sports
+Uploading Document .....
+[INFO] [00:09:43.517] Upload profile picture - D:\My Workspace\TestingWorkspace\test.robomq.com/TestData/Profile.png
+[INFO] [00:09:43.637] Enter current address - 123 Main Road, Jaipur, Rajasthan
+[INFO] [00:09:43.828] Select state - Rajasthan
+[INFO] [00:09:44.012] Select city - Jaiselmer
+[INFO] [00:09:44.110] Click to submit the form
+[INFO] [00:09:44.164] https://demoqa.com/automation-practice-form
+[INFO] [00:09:44.164] Test Passed
+Test Passed: TC055_verifyStudentRegistrationWithAllValidData
+]]></system-out>
+  </testcase>
+</testsuite>
