@@ -1,42 +1,143 @@
+
 pipeline {
     agent any
 
     triggers {
-        cron('00 21 * * *')
+        // Run every day at 10:00 PM IST
+        cron('TZ=Asia/Kolkata\n0 22 * * *')
+    }
+
+    options {
+        timestamps()
+        disableConcurrentBuilds()
+    }
+
+    environment {
+        GOOGLE_DRIVE_REPORT_URL = ''
+        EXTENT_REPORT_PATH = ''
+        EXTENT_REPORT_RELATIVE_PATH = ''
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from the Git repository, main branch
-                git url: 'https://github.com/pradeepsen11/flipkartHome-selenium-automation.git', branch: 'flipkart'
+                // Remove previous workspace files to avoid uploading stale reports
+                deleteDir()
+
+                git url: 'https://github.com/pradeepsen11/demoqa.com.git',
+                    branch: 'main'
             }
         }
-        
+
         stage('Build and Test') {
             steps {
-                // Run Maven build and tests
-                bat 'mvn clean install'
+                // Keep the TestNG suite configurable
+                bat 'mvn clean install "-DsuiteXmlFile=TestStudentRegistration.xml"'
             }
         }
     }
 
     post {
         always {
-            // Publish Extent Report
             script {
-                emailext (
-                    to: 'pksen7117@gmail.com',
-                    subject: "Extent Report | ${env.JOB_NAME} | ${env.BUILD_NUMBER} | ${currentBuild.currentResult}",
-                    body: """<p>Build status: ${currentBuild.currentResult}</p>
-                             <p>Job: ${env.JOB_NAME}</p>
-                             <p>Build number: ${env.BUILD_NUMBER}</p>
-                             <p>View build: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
-                    from: 'automationbypradeep@gmail.com',
-                    attachLog: true,
-                    attachmentsPattern: 'ExtentReports/ExtentReportResult.html',
-                    mimeType: 'text/html'
-                )
+                // Find the most recently generated Extent HTML report
+                try {
+                    def reportPath = powershell(
+                        returnStdout: true,
+                        script: '''
+                            $report = Get-ChildItem `
+                                -Path "ExtentReports" `
+                                -Filter "*.html" `
+                                -File `
+                                -Recurse `
+                                -ErrorAction SilentlyContinue |
+                                Sort-Object LastWriteTime -Descending |
+                                Select-Object -First 1
+
+                            if (-not $report) {
+                                throw "No HTML report found in ExtentReports."
+                            }
+
+                            Write-Output $report.FullName
+                        '''
+                    ).trim()
+
+                    env.EXTENT_REPORT_PATH = reportPath
+
+                    env.EXTENT_REPORT_RELATIVE_PATH =
+                        reportPath.substring(env.WORKSPACE.length + 1)
+                            .replace('\\', '/')
+
+                    echo "Extent report found: ${env.EXTENT_REPORT_RELATIVE_PATH}"
+
+                    // Keep a copy in Jenkins artifacts too
+                    archiveArtifacts(
+                        artifacts: env.EXTENT_REPORT_RELATIVE_PATH,
+                        fingerprint: true
+                    )
+
+                    // Upload by updating the existing Google Drive file
+                    withCredentials([
+                        file(
+                            credentialsId: 'google-drive-service-account-json',
+                            variable: 'GOOGLE_DRIVE_CREDENTIALS'
+                        ),
+                        string(
+                            credentialsId: 'google-drive-report-file-id',
+                            variable: 'GOOGLE_DRIVE_FILE_ID'
+                        )
+                    ]) {
+                        bat '''
+                            py -3 upload_extent_report.py "%EXTENT_REPORT_PATH%" "%GOOGLE_DRIVE_FILE_ID%"
+                        '''
+
+                        env.GOOGLE_DRIVE_REPORT_URL =
+                            "https://drive.google.com/file/d/${env.GOOGLE_DRIVE_FILE_ID}/view"
+                    }
+
+                    echo "Latest Extent report uploaded to Google Drive."
+
+                } catch (err) {
+                    echo "Report discovery/upload failed: ${err}"
+
+                    // Do not hide a test failure. Mark a successful test run
+                    // unstable if the reporting step fails.
+                    if (currentBuild.currentResult == 'SUCCESS') {
+                        currentBuild.result = 'UNSTABLE'
+                    }
+                }
+
+                // Preserve the existing email notification
+                try {
+                    def driveLinkHtml = env.GOOGLE_DRIVE_REPORT_URL
+                        ? """<p>Latest Extent Report:
+                             <a href="${env.GOOGLE_DRIVE_REPORT_URL}">
+                             Open report in Google Drive</a></p>"""
+                        : '<p>Google Drive upload was not completed. Check the Jenkins console.</p>'
+
+                    def attachmentPattern =
+                        env.EXTENT_REPORT_RELATIVE_PATH ?: 'ExtentReports/**/*.html'
+
+                    emailext(
+                        to: 'pksen7117@gmail.com',
+                        subject: "Extent Report | ${env.JOB_NAME} | ${env.BUILD_NUMBER} | ${currentBuild.currentResult}",
+                        body: """
+                            <p>Build status: ${currentBuild.currentResult}</p>
+                            <p>Job: ${env.JOB_NAME}</p>
+                            <p>Build number: ${env.BUILD_NUMBER}</p>
+                            <p>View Jenkins build:
+                               <a href="${env.BUILD_URL}">${env.BUILD_URL}</a>
+                            </p>
+                            ${driveLinkHtml}
+                        """,
+                        from: 'automationbypradeep@gmail.com',
+                        attachLog: true,
+                        attachmentsPattern: attachmentPattern,
+                        mimeType: 'text/html'
+                    )
+                } catch (emailError) {
+                    echo "Email notification failed: ${emailError}"
+                }
             }
         }
     }
