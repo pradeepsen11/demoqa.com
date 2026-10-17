@@ -110,7 +110,7 @@ if (Test-Path $root) {
                         String uploadOutput = bat(returnStdout: true, script: """@echo off
 py -3 -m pip --disable-pip-version-check install --user google-api-python-client google-auth
 if errorlevel 1 exit /b 1
-py -3 upload_extent_report.py "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
+bat '"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py' "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
 if errorlevel 1 exit /b 1
 """).trim()
                         echo uploadOutput
