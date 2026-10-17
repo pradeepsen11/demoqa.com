@@ -9,19 +9,9 @@
     <classes>
       <class name="testClasses.TestStudentRegistration">
         <methods>
-          <include name="TC025_verifyDateOfBirthCannotBeLeftInvalid"/>
           <include name="beforeClass"/>
-          <include name="TC017_verifyMobileRejectsNumberBeginningWithZeroToFive"/>
-          <include name="TC038_verifyCurrentAddressRejectsInputExceeding100Characters"/>
-          <include name="TC051_verifyCloseButtonClosesSuccessPopup"/>
           <include name="afterClass"/>
-          <include name="TC034_verifyUnsupportedFileTypeIsRejected"/>
-          <include name="TC007_verifyFirstNameRejectsInvalidNonTextInput"/>
-          <include name="TC035_verifyFileLargerThanTwoMBIsRejected"/>
-          <include name="TC028_verifyMaximumOfThreeSubjectsCanBeSelected"/>
-          <include name="TC008_verifyLastNameRejectsInvalidNonTextInput"/>
-          <include name="TC013_verifyMandatoryValidationForBlankEmail"/>
-          <include name="TC040_verifyCurrentAddressIsMandatory"/>
+          <include name="TC001_verifyUserCanNavigateToDemoQAHomePage"/>
         </methods>
       </class> <!-- testClasses.TestStudentRegistration -->
     </classes>
