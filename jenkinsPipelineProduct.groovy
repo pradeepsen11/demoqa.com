@@ -139,10 +139,10 @@ if errorlevel 1 exit /b 1
                     String duration = formatDuration(((System.currentTimeMillis() - startedAt) / 1000L).longValue())
                     def counts = parseCounts(env.TEST_SUMMARY)
                     String subjectStatus = (result == 'SUCCESS' && env.REPORT_UPLOAD_STATUS == 'SUCCESS') ? 'SUCCESS' : 'FAILURE'
-                    String icon = subjectStatus == 'SUCCESS' ? '✅' : '❌'
+                    String icon = subjectStatus == 'SUCCESS' ? '[SUCCESS]' : '[FAILURE]'
                     String reportBlock = env.GOOGLE_DRIVE_REPORT_URL
-                        ? "<p>🔗 <b>Extent Report:</b><br><a href=\"${env.GOOGLE_DRIVE_REPORT_URL}\">${env.GOOGLE_DRIVE_REPORT_URL}</a></p>"
-                        : "<p>🔗 <b>Google Drive report:</b> unavailable (${env.REPORT_UPLOAD_STATUS}). See the Jenkins build for the archived report, if generated.</p>"
+                        ? "<p>Report Link: <b>Extent Report:</b><br><a href=\"${env.GOOGLE_DRIVE_REPORT_URL}\">${env.GOOGLE_DRIVE_REPORT_URL}</a></p>"
+                        : "<p>Report Link: <b>Google Drive report:</b> unavailable (${env.REPORT_UPLOAD_STATUS}). See the Jenkins build for the archived report, if generated.</p>"
                     String failedBlock = env.FAILED_TESTS
                         ? "<h3>Failed test cases</h3><pre>${escapeHtml(env.FAILED_TESTS)}</pre>"
                         : (counts.failures > 0 || counts.errors > 0 ? '<p>Failure details were not extracted from Maven output; see the Jenkins build log and Surefire reports.</p>' : '')
@@ -150,11 +150,11 @@ if errorlevel 1 exit /b 1
                     String subject = "${icon} ${client} Selenium Automation | ${subjectStatus} | #${env.BUILD_NUMBER} | ${environment}"
                     String body = """<p>Hi,</p>
 <p>Please find test execution summary below -</p>
-<p>🔹 Execution Time: ${duration}<br>
+<p>- Execution Time: ${duration}<br>
 Tests run: ${counts.total}, Failures: ${counts.failures}, Skipped: ${counts.skipped}<br>
 Errors: ${counts.errors}<br>
-🔹 Build Result: ${result}<br>
-🔹 Report upload: ${env.REPORT_UPLOAD_STATUS}</p>
+- Build Result: ${result}<br>
+- Report upload: ${env.REPORT_UPLOAD_STATUS}</p>
 ${failedBlock}
 ${reportBlock}
 <p>Jenkins Build: <a href=\"${jenkinsUrl}\">${jenkinsUrl}</a></p>
