@@ -131,8 +131,9 @@ if not exist "C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\pytho
 "C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" --version
 if errorlevel 1 exit /b 1
 
+
 echo ===== Install Required Packages =====
-"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" -m pip --version
+"C:\Users\CSA\AppData\Local\Programs\Python\Python315\python.exe" -m pip install --user --disable-pip-version-check google-api-python-client google-auth
 if errorlevel 1 exit /b 1
 
 echo ===== Upload Extent Report =====
