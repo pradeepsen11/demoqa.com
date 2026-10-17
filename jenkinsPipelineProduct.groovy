@@ -108,8 +108,8 @@ exit /b %MAVEN_EXIT%
                     ]) {
                         String uploadOutput = bat(returnStdout: true, script: '''@echo off
 setlocal
-set "PYTHON_EXE=C:\Users\CSA\AppData\Local\Programs\Python\Python315\python.exe"
-set "PYTHON_LIBS=%WORKSPACE%\jenkins-python-libs"
+set "PYTHON_EXE=C:/Users/CSA/AppData/Local/Programs/Python/Python315/python.exe"
+set "PYTHON_LIBS=%WORKSPACE%/jenkins-python-libs"
 if not exist "%PYTHON_EXE%" (echo ERROR: Python not found at %PYTHON_EXE% & exit /b 1)
 if not exist "%PYTHON_LIBS%" mkdir "%PYTHON_LIBS%"
 "%PYTHON_EXE%" -m pip install --disable-pip-version-check --target "%PYTHON_LIBS%" google-api-python-client google-auth
