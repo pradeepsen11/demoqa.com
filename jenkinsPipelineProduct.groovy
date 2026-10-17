@@ -96,67 +96,94 @@ if (Test-Path $root) {
         }
 
         stage('Update Google Drive Report') {
-            if (!uploadToDrive) {
-                env.REPORT_UPLOAD_STATUS = 'DISABLED_BY_CONFIGURATION'
-            } else if (!env.EXTENT_REPORT_PATH) {
-                env.REPORT_UPLOAD_STATUS = 'NO_REPORT_FOUND'
-                if (!currentBuild.result || currentBuild.result == 'SUCCESS') currentBuild.result = 'UNSTABLE'
-            } else {
-                try {
-                    withCredentials([
-                        file(credentialsId: driveCredentialId, variable: 'GOOGLE_DRIVE_CREDENTIALS'),
-                        string(credentialsId: driveFileIdCredentialId, variable: 'GOOGLE_DRIVE_FILE_ID')
-                    ]) {
-//                         String uploadOutput = bat(returnStdout: true, script: """@echo off
-// py -3 -m pip --disable-pip-version-check install --user google-api-python-client google-auth
-// if errorlevel 1 exit /b 1
-// bat '"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py' "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
-// if errorlevel 1 exit /b 1
-// """).trim()
+    if (!uploadToDrive) {
+        env.REPORT_UPLOAD_STATUS = 'DISABLED_BY_CONFIGURATION'
+        echo 'Google Drive upload disabled by configuration.'
 
+    } else if (!env.EXTENT_REPORT_PATH) {
+        env.REPORT_UPLOAD_STATUS = 'NO_REPORT_FOUND'
+        echo 'Google Drive upload skipped: no Extent Report found.'
 
-String uploadOutput = bat(returnStdout: true, script: """
-@echo off
+        if (!currentBuild.result || currentBuild.result == 'SUCCESS') {
+            currentBuild.result = 'UNSTABLE'
+        }
+
+    } else {
+        try {
+            withCredentials([
+                file(
+                    credentialsId: driveCredentialId,
+                    variable: 'GOOGLE_DRIVE_CREDENTIALS'
+                ),
+                string(
+                    credentialsId: driveFileIdCredentialId,
+                    variable: 'GOOGLE_DRIVE_FILE_ID'
+                )
+            ]) {
+                String uploadOutput = bat(
+                    returnStdout: true,
+                    script: '''@echo off
 setlocal
+
+set "PYTHON_EXE=C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe"
+set "PYTHON_LIBS=%WORKSPACE%\\jenkins-python-libs"
 
 echo ===== Jenkins Windows Account =====
 whoami
 
-echo ===== Python Executable Check =====
-if not exist "C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" (
-    echo ERROR: Python executable not accessible at the specified path.
+echo ===== Verify Python =====
+if not exist "%PYTHON_EXE%" (
+    echo ERROR: Python executable not found: %PYTHON_EXE%
     exit /b 1
 )
 
-"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" --version
+"%PYTHON_EXE%" --version
 if errorlevel 1 exit /b 1
 
+echo ===== Install Google API Dependencies =====
+if not exist "%PYTHON_LIBS%" mkdir "%PYTHON_LIBS%"
 
-echo ===== Install Required Packages =====
-"C:\Users\CSA\AppData\Local\Programs\Python\Python315\python.exe" -m pip install --user --disable-pip-version-check google-api-python-client google-auth
+"%PYTHON_EXE%" -m pip install --disable-pip-version-check --target "%PYTHON_LIBS%" google-api-python-client google-auth
+if errorlevel 1 exit /b 1
+
+echo ===== Verify Google API Imports =====
+"%PYTHON_EXE%" -c "import sys; sys.path.insert(0, r'%PYTHON_LIBS%'); from google.oauth2.service_account import Credentials; from googleapiclient.discovery import build; print('Google API packages OK')"
 if errorlevel 1 exit /b 1
 
 echo ===== Upload Extent Report =====
-"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
+"%PYTHON_EXE%" -c "import runpy,sys; sys.path.insert(0, r'%PYTHON_LIBS%'); sys.argv=[r'upload_extent_report.py', r'%EXTENT_REPORT_PATH%', r'%GOOGLE_DRIVE_FILE_ID%']; runpy.run_path('upload_extent_report.py', run_name='__main__')"
 if errorlevel 1 exit /b 1
 
 endlocal
-""".trim())
+'''
+                ).trim()
 
+                echo uploadOutput
 
-                        echo uploadOutput
-                        def urlMatcher = (uploadOutput =~ /Google Drive report URL:\s*(https:\/\/\S+)/)
-                        if (!urlMatcher.find()) error('Uploader exited successfully but did not return a Google Drive report URL.')
-                        env.GOOGLE_DRIVE_REPORT_URL = urlMatcher.group(1)
-                        env.REPORT_UPLOAD_STATUS = 'SUCCESS'
-                    }
-                } catch (uploadError) {
-                    env.REPORT_UPLOAD_STATUS = 'FAILED'
-                    echo "Google Drive update failed: ${uploadError}"
-                    if (!currentBuild.result || currentBuild.result == 'SUCCESS') currentBuild.result = 'UNSTABLE'
+                def urlMatcher = (
+                    uploadOutput =~ /Google Drive report URL:\\s*(https?:\\/\\/\\S+)/
+                )
+
+                if (!urlMatcher.find()) {
+                    error('Upload script completed without returning a Google Drive report URL.')
                 }
+
+                env.GOOGLE_DRIVE_REPORT_URL = urlMatcher.group(1)
+                env.REPORT_UPLOAD_STATUS = 'SUCCESS'
+
+                echo "Google Drive report uploaded: ${env.GOOGLE_DRIVE_REPORT_URL}"
+            }
+
+        } catch (uploadError) {
+            env.REPORT_UPLOAD_STATUS = 'FAILED'
+            echo "Google Drive update failed: ${uploadError}"
+
+            if (!currentBuild.result || currentBuild.result == 'SUCCESS') {
+                currentBuild.result = 'UNSTABLE'
             }
         }
+    }
+}
 
         stage('Send Email Alert') {
             if (!sendEmail) {
