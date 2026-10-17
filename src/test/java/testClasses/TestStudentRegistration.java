@@ -55,6 +55,7 @@ public class TestStudentRegistration extends BaseTest {
 		StudentRegistrationPageObject page = page();
 		page.navigateToHomePage();
 		Assert.assertEquals(getDriver().getCurrentUrl(), "https://demoqa.com/", "DemoQA home page was not opened.");
+		Assert.fail();
 	}
 
 //	@Test(priority = 2)
