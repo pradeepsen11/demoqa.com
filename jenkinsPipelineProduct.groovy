@@ -107,12 +107,42 @@ if (Test-Path $root) {
                         file(credentialsId: driveCredentialId, variable: 'GOOGLE_DRIVE_CREDENTIALS'),
                         string(credentialsId: driveFileIdCredentialId, variable: 'GOOGLE_DRIVE_FILE_ID')
                     ]) {
-                        String uploadOutput = bat(returnStdout: true, script: """@echo off
-py -3 -m pip --disable-pip-version-check install --user google-api-python-client google-auth
+//                         String uploadOutput = bat(returnStdout: true, script: """@echo off
+// py -3 -m pip --disable-pip-version-check install --user google-api-python-client google-auth
+// if errorlevel 1 exit /b 1
+// bat '"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py' "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
+// if errorlevel 1 exit /b 1
+// """).trim()
+
+
+String uploadOutput = bat(returnStdout: true, script: """
+@echo off
+setlocal
+
+echo ===== Jenkins Windows Account =====
+whoami
+
+echo ===== Python Executable Check =====
+if not exist "C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" (
+    echo ERROR: Python executable not accessible at the specified path.
+    exit /b 1
+)
+
+"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" --version
 if errorlevel 1 exit /b 1
-bat '"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py' "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
+
+echo ===== Install Required Packages =====
+"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" -m pip --version
 if errorlevel 1 exit /b 1
-""").trim()
+
+echo ===== Upload Extent Report =====
+"C:\\Users\\CSA\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" upload_extent_report.py "${env.EXTENT_REPORT_PATH}" "%GOOGLE_DRIVE_FILE_ID%"
+if errorlevel 1 exit /b 1
+
+endlocal
+""".trim())
+
+
                         echo uploadOutput
                         def urlMatcher = (uploadOutput =~ /Google Drive report URL:\s*(https:\/\/\S+)/)
                         if (!urlMatcher.find()) error('Uploader exited successfully but did not return a Google Drive report URL.')
